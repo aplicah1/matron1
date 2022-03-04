@@ -1,0 +1,64 @@
+{
+    "store.custom#delivery": {
+        "blocks": [
+            "flex-layout.row#delivery"
+        ]
+    },
+
+    "flex-layout.row#delivery": {
+        "props": {
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "flex-layout.col#delivery-1",
+            "flex-layout.col#delivery-2"
+        ]
+    },
+    "flex-layout.col#delivery-1": {
+        "props": {
+            "width": "22%",
+            "blockClass": "menu-institucional"
+        },
+        "children": [
+            "rich-text#title-menu-institucional",
+            "rich-text#menu-institucional-1",
+            "rich-text#menu-institucional-2",
+            "rich-text#menu-institucional-3-active",
+            "rich-text#menu-institucional-4",
+            "rich-text#menu-institucional-5",
+            "rich-text#menu-institucional-6",
+            "rich-text#menu-institucional-7",
+            "rich-text#menu-institucional-8"
+        ]
+    },
+
+    "flex-layout.col#delivery-2": {
+        "props": {
+            "width": "78%",
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "rich-text#titulo-delivery",
+            "image#delivery",
+            "rich-text#conteudo-delivery"
+        ]
+    },
+    "rich-text#titulo-delivery": {
+        "props": {
+            "blockClass": "title-content-institucional",
+            "text": "## Delivery - Matron"
+        }
+    },
+    "image#delivery": {
+        "props": {
+            "src": "https://www.matron.com.br/arquivos/Banner_Delivery.jpg",
+            "maxHeight": 140
+        }
+    },
+    "rich-text#conteudo-delivery": {
+        "props": {
+            "blockClass": "content-institucional",
+            "text": "A Matron, pensando no conforto e comodidade de seus clientes está disponibilizando uma nova forma de entrega exclusiva para São Paulo, a opção Delivery ou Contra Entrega.<br><br>Como Funciona:<br>O cliente da Matron poderá realizar seus pedidos através de nosso televendas e utilizar as mesmas formas de pagamento do site, com uma grande diferença o pagamento poderá ser realizado no momento da entrega utilizando-se do seu cartão de débito com 10% desconto ou parcelado no cartão de crédito em até 3X sem juros. Esta nova forma de entrega e pagamento vem na medida certa do seu tempo e comodidade ao utilizar esse serviço será adicionado uma taxa adicional para entrega através de Motoboy que pode variar de acordo com sua região."
+        }
+    }
+}

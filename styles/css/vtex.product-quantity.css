@@ -1,0 +1,8 @@
+.quantitySelectorContainer {
+    margin-bottom: 0;
+}
+
+.quantitySelectorStepper .numeric-stepper__plus-button {
+    cursor: pointer;
+    color: #000;
+}

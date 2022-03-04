@@ -1,0 +1,59 @@
+.container--layout-option {
+    margin-left: 0.3em;
+}
+
+.paragraph--layout-option {
+    margin: 0;
+}
+
+.paragraph--summarySpecificationBullet {
+    margin: 0;
+    line-height: initial;
+    font-size: 1.25rem;
+    line-height: 1.15rem;
+}
+
+.paragraph--carousel-texto-topo {
+    margin: 5px 0;
+}
+
+.heading--grid-banners {
+    background-image: url("data:image/svg+xml,%3Csvg id='Componente_14_1' data-name='Componente 14 – 1' xmlns='http://www.w3.org/2000/svg' width='39' height='29' viewBox='0 0 39 29'%3E%3Cg id='Retângulo_1809' data-name='Retângulo 1809' fill='none' stroke='%232d752a' stroke-width='6'%3E%3Crect width='39' height='29' rx='7' stroke='none'/%3E%3Crect x='3' y='3' width='33' height='23' rx='4' fill='none'/%3E%3C/g%3E%3Cg id='Retângulo_1810' data-name='Retângulo 1810' transform='translate(16)' fill='%232d752a' stroke='%232d752a' stroke-width='1'%3E%3Crect width='7' height='21' rx='3.5' stroke='none'/%3E%3Crect x='0.5' y='0.5' width='6' height='20' rx='3' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left 11px;
+    padding-left: 50px;
+    background-size: 30px;
+}
+
+.headingLevel2--shelfTitle-promocoes {
+    background-image: url("data:image/svg+xml,%3Csvg id='noun_Percent_3012444' xmlns='http://www.w3.org/2000/svg' width='28.87' height='28.866' viewBox='0 0 28.87 28.866'%3E%3Cg id='Grupo_5' data-name='Grupo 5'%3E%3Cpath id='Caminho_9' data-name='Caminho 9' d='M30.369,3.455a3.355,3.355,0,0,0-4.739,0L3.455,25.63a3.355,3.355,0,0,0,0,4.739,3.307,3.307,0,0,0,2.369.972,3.438,3.438,0,0,0,2.369-.972L30.339,8.224A3.365,3.365,0,0,0,30.369,3.455Z' transform='translate(-2.475 -2.475)' fill='%232d752a'/%3E%3Ccircle id='Elipse_5' data-name='Elipse 5' cx='5.891' cy='5.891' r='5.891' transform='translate(0.186 0.186)' fill='%232d752a'/%3E%3Ccircle id='Elipse_6' data-name='Elipse 6' cx='5.891' cy='5.891' r='5.891' transform='translate(16.906 16.907)' fill='%232d752a'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left 11px;
+    padding-left: 50px;
+    background-size: 25px;
+}
+
+.headingLevel2--shelfTitle-acabaram-de-chegar {
+    background-image: url("data:image/svg+xml,%3Csvg id='noun_new_1393197' xmlns='http://www.w3.org/2000/svg' width='37.281' height='37.281' viewBox='0 0 37.281 37.281'%3E%3Cg id='Grupo_3' data-name='Grupo 3' transform='translate(0 0)'%3E%3Cg id='Grupo_1' data-name='Grupo 1' transform='translate(0 0)'%3E%3Cpath id='Caminho_3' data-name='Caminho 3' d='M26.361,4.218,22.144,0,13.181,8.963,4.218,0,0,4.218l8.963,8.963L0,22.144l4.218,4.218L13.181,17.4l8.963,8.963,4.218-4.218L17.4,13.181Z' transform='translate(18.64 0) rotate(45)' fill='%232d752a' fill-rule='evenodd'/%3E%3C/g%3E%3Cg id='Grupo_2' data-name='Grupo 2' transform='translate(0 0)'%3E%3Cpath id='Caminho_4' data-name='Caminho 4' d='M26.361,4.218,22.144,0,13.181,8.963,4.218,0,0,4.218l8.963,8.963L0,22.144l4.218,4.218L13.181,17.4l8.963,8.963,4.218-4.218L17.4,13.181Z' transform='translate(18.64 0) rotate(45)' fill='%232d752a' fill-rule='evenodd'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left 7px;
+    padding-left: 50px;
+    background-size: 30px;
+}
+
+.headingLevel2--shelfTitle-os-mais-buscados {
+    background-image: url("data:image/svg+xml,%3Csvg id='noun_Search_4292302' xmlns='http://www.w3.org/2000/svg' width='36.823' height='36.804' viewBox='0 0 36.823 36.804'%3E%3Cpath id='Caminho_1' data-name='Caminho 1' d='M20.888,51.513l7.354-7.354a15.578,15.578,0,1,1,4.339,4.333L25.19,55.846a3.064,3.064,0,1,1-4.333-4.333ZM53.08,35.524A11.871,11.871,0,1,0,41.211,47.389,11.871,11.871,0,0,0,53.08,35.524Z' transform='translate(-19.959 -19.939)' fill='%232d752a'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left 10px;
+    padding-left: 50px;
+    background-size: 27px;
+}
+
+@media(max-width:768px) {
+    .heading--shelf-title {
+        font-size: 1.7rem;
+        background-size: 20px;
+        padding-left: 30px;
+        background-position: left center;
+    }
+}

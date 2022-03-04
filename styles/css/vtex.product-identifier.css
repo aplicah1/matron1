@@ -1,0 +1,19 @@
+.product-identifier--productReference {
+    margin-bottom: 1rem;
+}
+
+.product-identifier__label,
+.product-identifier__separator {
+    font-weight: bold;
+    color: #303030;
+    font-size: 12px;
+}
+
+.product-identifier__value {
+    color: #303030;
+    font-size: 12px;
+}
+
+.product-identifier {
+    margin: 0;
+}

@@ -1,0 +1,42 @@
+{
+    "title": "Contato",
+    "type": "object",
+    "properties": {
+        "Nome": {
+            "type": "string",
+            "title": "Nome",
+            "description": "Primeiro Nome"
+        },
+        "Sobrenome": {
+            "type": "string",
+            "title": "Sobrenome",
+            "description": "Sobrenome"
+        },
+        "Email": {
+            "type": "string",
+            "format": "email",
+            "title": "Endereço de Email"
+        },
+        "Telefone": {
+            "type": "string",
+            "title": "Telefone"
+        },
+        "Mensagem": {
+            "type": "text",
+            "title": "Mensagem"
+        }
+    },
+    "required": [
+        "firstName",
+        "emailAddress",
+        "phone",
+        "message"
+    ],
+    "v-security": {
+        "publicJsonSchema": true,
+        "allowGetAll": true,
+        "publicRead": ["Nome"],
+        "publicWrite": ["Nome"],
+        "publicFilter": ["Nome"]
+    }
+}

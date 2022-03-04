@@ -1,0 +1,16 @@
+.containerImg {
+    background-color: #F0F0F0;
+}
+
+.carousel-texto-topo {
+    background-color: #AE0909;
+    color: #fff;
+}
+
+.containerImg .img {
+    max-width: 1520px;
+}
+
+.bg-emphasis {
+    background-color: #000;
+}

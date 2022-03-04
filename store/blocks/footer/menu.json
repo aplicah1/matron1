@@ -1,0 +1,151 @@
+{
+    "vtex.menu@2.x:menu#footerMenuInstitucional": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menuFooterInstitucional"
+        },
+        "children": [
+            "menu-item#quem-somos",
+            "menu-item#como-chegar",
+            "menu-item#delivery",
+            "menu-item#servicos-e-manutencao"
+        ]
+    },
+    "menu-item#quem-somos": {
+        "props": {
+            "id": "menu-item-quem-somos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/quem-somos",
+                "noFollow": false,
+                "tagTitle": "Quem Somos",
+                "text": "Quem Somos"
+            }
+        }
+    },
+    "menu-item#como-chegar": {
+        "props": {
+            "id": "menu-item-como-chegar",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/como-chegar",
+                "noFollow": false,
+                "tagTitle": "Como Chegar",
+                "text": "Como Chegar"
+            }
+        }
+    },
+    "menu-item#delivery": {
+        "props": {
+            "id": "menu-item-delivery",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/delivery",
+                "noFollow": false,
+                "tagTitle": "Delivery",
+                "text": "Delivery"
+            }
+        }
+    },
+    "menu-item#servicos-e-manutencao": {
+        "props": {
+            "id": "menu-item-servicos-e-manutencao",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/servicos-e-manutencao",
+                "noFollow": false,
+                "tagTitle": "Serviços e Manutenção",
+                "text": "Serviços e Manutenção"
+            }
+        }
+    },
+
+
+
+
+
+    "vtex.menu@2.x:menu#footerMenuAjuda": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menuFooterAtendimento"
+        },
+        "children": [
+            "menu-item#fale-conosco",
+            "menu-item#suporte-e-devolucoes",
+            "menu-item#politica-de-uso",
+            "menu-item#formas-de-pagamento"
+        ]
+    },
+    "menu-item#fale-conosco": {
+        "props": {
+            "id": "menu-item-fale-conosco",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/fale-conosco",
+                "noFollow": false,
+                "tagTitle": "Fale Conosco",
+                "text": "Fale Conosco"
+            }
+        }
+    },
+    "menu-item#suporte-e-devolucoes": {
+        "props": {
+            "id": "menu-item-suporte-e-devolucoes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/suporte-e-devolucoes",
+                "noFollow": false,
+                "tagTitle": "Suporte e Devoluções",
+                "text": "Suporte e Devoluções"
+            }
+        }
+    },
+    "menu-item#politica-de-uso": {
+        "props": {
+            "id": "menu-item-politica-de-uso",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/politica-de-uso",
+                "noFollow": false,
+                "tagTitle": "Política de Uso",
+                "text": "Política de Uso"
+            }
+        }
+    },
+    "menu-item#formas-de-pagamento": {
+        "props": {
+            "id": "menu-item-formas-de-pagamento",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/formas-de-pagamento",
+                "noFollow": false,
+                "tagTitle": "Formas de Pagamento",
+                "text": "Formas de Pagamento"
+            }
+        }
+    }
+}

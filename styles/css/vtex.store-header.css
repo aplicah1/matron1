@@ -1,0 +1,136 @@
+/* add transitions */
+
+:global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-logoLink),
+:global(.vtex-sticky-layout-0-x-container) :global(.vtex-minicart-2-x-openIconContainer),
+:global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-searchBarContainer) {
+    transition: all 0.3s ease;
+    display: block;
+}
+
+
+/* desktop/mobile main header padding and background transitions */
+
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    transition: background 0.3s ease;
+    will-change: padding, background;
+}
+
+
+/* main header desktop has a bigger padding when not stuck */
+
+:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+/* add a box-shadow to desktop/mobile header when stuck */
+
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/*
+ * remove the extra padding when stuck from the desktop header
+ * we add a transition only when "stuck" for the "unstick" step seem faster
+ */
+
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+    transition: padding 0.3s ease, background 0.3s ease;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+/* if supported add some translucency to the desktop/mobile header background */
+
+@supports (backdrop-filter: blur(5px)) {
+     :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+     :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+        backdrop-filter: blur(8px);
+    }
+    /* header background when stuck and not hovered */
+     :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
+     :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover) :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
+        background: rgba(240, 240, 240, 0.8);
+    }
+}
+
+
+/* stick wrapper with the same color as the desktop/mobile header */
+
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
+    background-color: #fff;
+}
+
+
+/* resize the logo for neat effect */
+
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-store-components-3-x-logoLink) {
+    transform: scale(0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+     :global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-logoLink),
+     :global(.vtex-sticky-layout-0-x-container) :global(.vtex-minicart-2-x-openIconContainer),
+     :global(.vtex-sticky-layout-0-x-container) :global(.vtex-store-components-3-x-searchBarContainer),
+     :global(.vtex-sticky-layout-0-x-wrapper--stuck) :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
+        transition: none;
+    }
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--favoritos-wrapper) :global(.vtex-store-link-0-x-link) {
+    text-decoration: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--favoritos-wrapper) :global(.vtex-store-link-0-x-link)::before {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.904' height='33.386' viewBox='0 0 34.904 33.386'%3E%3Cg id='noun_Star_4293186' transform='translate(0 0)'%3E%3Cg id='Grupo_16' data-name='Grupo 16' transform='translate(0 0)'%3E%3Cpath id='Caminho_432' data-name='Caminho 432' d='M219.486,162.434a1.746,1.746,0,0,0-1.568.951l-4.56,8.9-9.885,1.551a1.745,1.745,0,0,0-.964,2.955l7.056,7.093-1.575,9.878A1.745,1.745,0,0,0,210.5,195.6l8.923-4.52,8.906,4.55a1.745,1.745,0,0,0,2.519-1.824l-1.541-9.884,7.083-7.066a1.745,1.745,0,0,0-.958-2.959l-9.874-1.588-4.53-8.92a1.745,1.745,0,0,0-1.544-.954Z' transform='translate(-202 -162.434)' fill='%23303030'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 25px;
+    height: 25px;
+    display: table;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--favoritos-wrapper) {
+    display: flex;
+    align-items: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--favoritos-wrapper) :global(.vtex-store-link-0-x-label) {
+    display: table!important;
+    color: #AE0909;
+    text-decoration: none;
+    padding-left: 35px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--favoritos-wrapper) :global(.vtex-store-link-0-x-label)::before {
+    content: "Meus";
+    display: table;
+    color: #303030;
+}
+
+@media(min-width:769px) {
+     :global(.vtex-flex-layout-0-x-flexColChild--favoritos-wrapper) {
+        width: 150px;
+    }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--barra-busca-mobile) {
+    background-color: #fff;
+}
+
+@media(max-width:768px) {
+     :global(.vtex-store-components-3-x-searchBarContainer) {
+        margin-left: 0;
+        border-top: 1px solid #eee;
+    }
+}

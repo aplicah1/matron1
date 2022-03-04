@@ -1,0 +1,20 @@
+.arrow:last-child .link,
+.term {
+    color: #D2273B;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.container {
+    width: 95%!important;
+    margin: 0 auto;
+}
+
+.homeIcon {
+    width: 20px;
+}
+
+.link {
+    font-size: 12px;
+    color: #B1B1B1;
+}

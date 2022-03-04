@@ -1,0 +1,63 @@
+{
+    "store.custom#servicos-e-manutencao": {
+        "blocks": [
+            "flex-layout.row#servicos-e-manutencao"
+        ]
+    },
+
+    "flex-layout.row#servicos-e-manutencao": {
+        "props": {
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "flex-layout.col#servicos-e-manutencao-1",
+            "flex-layout.col#servicos-e-manutencao-2"
+        ]
+    },
+    "flex-layout.col#servicos-e-manutencao-1": {
+        "props": {
+            "width": "22%",
+            "blockClass": "menu-institucional"
+        },
+        "children": [
+            "rich-text#title-menu-institucional",
+            "rich-text#menu-institucional-1",
+            "rich-text#menu-institucional-2",
+            "rich-text#menu-institucional-3",
+            "rich-text#menu-institucional-4-active",
+            "rich-text#menu-institucional-5",
+            "rich-text#menu-institucional-6",
+            "rich-text#menu-institucional-7",
+            "rich-text#menu-institucional-8"
+        ]
+    },
+    "flex-layout.col#servicos-e-manutencao-2": {
+        "props": {
+            "width": "78%",
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "rich-text#titulo-servicos-e-manutencao-1",
+            "rich-text#conteudo-servicos-e-manutencao-1",
+            "image#logo-matron"
+        ]
+    },
+    "rich-text#titulo-servicos-e-manutencao-1": {
+        "props": {
+            "blockClass": "title-content-institucional",
+            "text": "## Serviços e Manutenção"
+        }
+    },
+    "rich-text#conteudo-servicos-e-manutencao-1": {
+        "props": {
+            "blockClass": "content-institucional",
+            "text": "Manutenção de Suporte:<br>A Matron pensando no conforto e comodidade de seus clientes oferece serviços de: manutenção, suporte e projetos. Ideal para você usuário e empresas de pequeno e médio porte que não pode manter um profissional de TI fixo devido ao custo deste tipo de profissional.<br><br>Serviços:<br><br>Instalação , Configuração e Formatação de Windows XP, Vista, 7;<br>Configuração, instalação e manutenção de equipamentos de informática;<br>Instalação e manutenção de redes com arquitetura em Windows;<br>Manutenção Corretiva de Computadores;<br>Manutenção Preventiva;<br>Conserto de PCs e Notebooks;<br>Instalação e Configuração de Roteador “Wireless ”;<br>Backup de dados e configuração de email do equipamento antigo para o novo;<br>Prevenção de perda de dados com backup regular;<br>Compartilhamento de Internet em banda larga da empresa ou residência;<br>Instalação de Programas;<br>Conflitos de Hardware (Peças e Equipamentos);<br>Integração total com roteadores e equipamentos da rede;<br>Suporte técnico completo para resolução de problemas básicos e avançados;<br>Projeto, instalação e manutenção de redes;<br>Reestruturação de rede já existente."
+        }
+    },
+    "image#logo-matron": {
+        "props": {
+            "src": "https://www.matron.com.br/arquivos/Logo.png",
+            "maxHeight": 120
+        }
+    }
+}

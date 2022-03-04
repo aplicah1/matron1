@@ -1,0 +1,43 @@
+.wishlistIconContainer {
+    position: absolute;
+    right: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--resumo) :global(.vtex-flex-layout-0-x-flexRowContent) {
+    display: flex;
+    align-items: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--resumo) {
+    padding: 1px 0;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    align-items: center;
+    margin: 7px 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--resumo) .wishlistIconContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--resumo) .wishlistIconContainer::before {
+    content: "Adicionar aos Favoritos";
+    position: absolute;
+    color: #303030;
+    font-size: 12px;
+    left: 0;
+}
+
+.wishlistIcon {
+    background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1000 1000' enable-background='new 0 0 1000 1000' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M759.5,990c-11.3,0-22.6-2.9-32.7-8.5L506.4,859.3c-4-2.2-8.8-2.2-12.8,0L273.3,981.4c-27.9,15.5-64.1,8.5-84.5-15.5c-12.8-15.1-18.3-35-15.1-54.8l43-264.7c0.7-4.2-0.7-8.5-3.6-11.5L29.3,445.8c-17.8-18.3-23.8-44.8-15.7-69c8.1-24.2,28.8-41.6,54-45.5L318.1,293c4.4-0.7,8.1-3.5,10-7.5L438.7,49C450,25,473.4,10,500,10c26.6,0,50.1,15,61.3,39.1L672,285.5c1.9,4,5.6,6.9,10,7.5l250.5,38.4c25.2,3.9,45.8,21.3,53.9,45.4c8.1,24.3,2.1,50.7-15.7,69l-183.8,189c-2.9,3-4.3,7.3-3.6,11.5l43,264.8c3.2,19.7-2.3,39.7-15.2,54.8C798.2,981.2,779.3,990,759.5,990z M500,803.2c11.5,0,22.8,2.9,32.8,8.5l220.3,122.2c5.8,3.2,12.5,1.6,16.6-3.2c2.6-3,3.5-6.6,2.9-10.8l-43-264.7c-3.4-21.1,3.4-42.9,18.3-58.3l183.8-189c5.1-5.3,3.9-11.4,3.1-13.7c-0.8-2.3-3.4-7.8-10.6-9l-250.5-38.4c-22.4-3.4-41.5-17.7-51.1-38.3L512,72.1c-3.2-6.9-9.4-7.6-12-7.6c-2.5,0-8.8,0.7-12,7.7L377.4,308.5c-9.6,20.5-28.7,34.8-51.1,38.3L75.8,385.2c-7.2,1.1-9.8,6.6-10.6,9c-0.8,2.3-2.1,8.4,3.1,13.7l183.8,189c14.9,15.3,21.8,37.1,18.3,58.3l-43.1,264.7c-0.7,4.1,0.3,7.8,2.9,10.8c4.1,4.8,10.8,6.4,16.6,3.2l220.3-122.1C477.2,806.1,488.6,803.2,500,803.2z'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+    background-size: contain;
+    z-index: 9;
+}
+
+.fill {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.904' height='33.386' viewBox='0 0 34.904 33.386'%3E%3Cg id='noun_Star_4293186' transform='translate(0 0)'%3E%3Cg id='Grupo_16' data-name='Grupo 16' transform='translate(0 0)'%3E%3Cpath id='Caminho_432' data-name='Caminho 432' d='M219.486,162.434a1.746,1.746,0,0,0-1.568.951l-4.56,8.9-9.885,1.551a1.745,1.745,0,0,0-.964,2.955l7.056,7.093-1.575,9.878A1.745,1.745,0,0,0,210.5,195.6l8.923-4.52,8.906,4.55a1.745,1.745,0,0,0,2.519-1.824l-1.541-9.884,7.083-7.066a1.745,1.745,0,0,0-.958-2.959l-9.874-1.588-4.53-8.92a1.745,1.745,0,0,0-1.544-.954Z' transform='translate(-202 -162.434)' fill='%23303030'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") center center 20px!important;
+}

@@ -1,0 +1,119 @@
+{
+    "store.custom#fale-conosco": {
+        "blocks": [
+            "flex-layout.row#fale-conosco"
+        ]
+    },
+
+    "flex-layout.row#fale-conosco": {
+        "props": {
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "flex-layout.col#fale-conosco-1",
+            "flex-layout.col#fale-conosco-2"
+        ]
+    },
+    "flex-layout.col#fale-conosco-1": {
+        "props": {
+            "width": "22%",
+            "blockClass": "menu-institucional"
+        },
+        "children": [
+            "rich-text#title-menu-ajuda",
+            "rich-text#menu-institucional-1",
+            "rich-text#menu-institucional-2",
+            "rich-text#menu-institucional-3",
+            "rich-text#menu-institucional-4",
+            "rich-text#menu-institucional-5-active",
+            "rich-text#menu-institucional-6",
+            "rich-text#menu-institucional-7",
+            "rich-text#menu-institucional-8"
+        ]
+    },
+    "rich-text#title-menu-ajuda": {
+        "props": {
+            "blockClass": "title-institucional",
+            "text": "### Ajuda"
+        }
+    },
+    "rich-text#menu-ajuda-1": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-ajuda-1"],
+            "text": "[Fale Conosco](/fale-conosco)"
+        }
+    },
+    "rich-text#menu-ajuda-1-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-ajuda-1", "menu-institucional-active"],
+            "text": "[Nossa Estrela](/nossa-estrela)"
+        }
+    },
+    "rich-text#menu-ajuda-2": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-ajuda-2"],
+            "text": "[Política de Uso](/politica-de-uso)"
+        }
+    },
+    "rich-text#menu-ajuda-2-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-ajuda-2", "menu-institucional-active"],
+            "text": "[Política de Uso](/politica-de-uso)"
+        }
+    },
+    "rich-text#menu-ajuda-3": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-ajuda-3"],
+            "text": "[Entrega e Recebimento](/entrega-e-recebimento)"
+        }
+    },
+    "rich-text#menu-ajuda-3-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-ajuda-3", "menu-institucional-active"],
+            "text": "[Entrega e Recebimento](/entrega-e-recebimento)"
+        }
+    },
+
+    "flex-layout.col#fale-conosco-2": {
+        "props": {
+            "width": "78%",
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "rich-text#titulo-fale-conosco-1",
+            "rich-text#conteudo-fale-conosco-1",
+            "flex-layout.row#form"
+        ]
+    },
+    "rich-text#titulo-fale-conosco-1": {
+        "props": {
+            "blockClass": "title-content-institucional",
+            "text": "## Serviço de Atendimento ao Consumidor"
+        }
+    },
+    "rich-text#conteudo-fale-conosco-1": {
+        "props": {
+            "blockClass": "content-institucional",
+            "text": "Horário de Atendimento.<br>Segunda à Sextas das 8:30h às 17:30h.<br>Sábados das 9h às 14h."
+        }
+
+    },
+    "flex-layout.row#form": {
+        "children": [
+            "flex-layout.col#form"
+        ]
+    },
+    "flex-layout.col#form": {
+        "children": [
+            "iframe"
+        ]
+    },
+    "iframe": {
+        "props": {
+            "src": "https://docs.google.com/forms/d/e/1FAIpQLSe5Jc2nZFii3VpL1rsqS6FvwHNTP3mH7nhz8UXVvjFnSdh5mw/viewform?usp=sf_link",
+            "title": "Contato",
+            "width": "920",
+            "height": "1500"
+        }
+    }
+}

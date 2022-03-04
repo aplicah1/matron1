@@ -1,0 +1,392 @@
+{
+    "footer": {
+        "blocks": [
+            "footer-layout.desktop",
+            "footer-layout.mobile"
+        ]
+    },
+    "footer-layout.desktop": {
+        "children": [
+            "newsletter",
+            "flex-layout.row#footer-1-desktop",
+            "flex-layout.row#footer-2-desktop",
+            "flex-layout.row#footer-3-desktop"
+        ]
+    },
+    "footer-layout.mobile": {
+        "children": [
+            "newsletter",
+            "flex-layout.row#footer-1-desktop",
+            "flex-layout.row#footer-2-desktop"
+        ]
+    },
+    "newsletter": {
+        "props": {
+            "label": "Receba ofertas diretamente no seu E-Mail",
+            "placeholder": "Digite seu email",
+            "submit": "Enviar",
+            "confirmationTitle": "Obrigado",
+            "confirmationText": "Seu email foi registrado"
+        }
+    },
+    "flex-layout.row#footer-1-desktop": {
+        "children": [
+            "flex-layout.col#col-footer-1",
+            "flex-layout.col#col-footer-2",
+            "flex-layout.col#col-footer-3",
+            "flex-layout.col#col-footer-4"
+        ],
+        "props": {
+            "blockClass": "footer-wrapper"
+        }
+    },
+    "flex-layout.col#col-footer-1": {
+        "children": [
+            "rich-text#footer-1",
+            "vtex.menu@2.x:menu#footerMenuInstitucional"
+        ],
+        "props": {
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#footer-1": {
+        "props": {
+            "text": "**Institucional**",
+            "blockClass": "footer"
+        }
+    },
+
+    "flex-layout.col#col-footer-2": {
+        "children": [
+            "rich-text#footer-2",
+            "vtex.menu@2.x:menu#footerMenuAjuda"
+        ],
+        "props": {
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#footer-2": {
+        "props": {
+            "text": "**Ajuda**",
+            "blockClass": "footer"
+        }
+    },
+
+    "flex-layout.col#col-footer-3": {
+        "children": [
+            "rich-text#footer-3",
+            "rich-text#footer-4",
+            "rich-text#footer-5",
+            "flex-layout.row#row-footer-atendimento"
+        ],
+        "props": {
+            "blockClass": "central-de-atendimento-wrapper",
+            "width": "30%"
+        }
+    },
+    "rich-text#footer-3": {
+        "props": {
+            "text": "**Central de Atendimento**",
+            "blockClass": "central-de-atendimento"
+        }
+    },
+    "rich-text#footer-4": {
+        "props": {
+            "text": "![Telefone](/arquivos/matron-footer-phone-icon.png) **(11) 3222-1334**",
+            "blockClass": "footer-img"
+        }
+    },
+    "rich-text#footer-5": {
+        "props": {
+            "text": "**Segunda a sexta das 08:30 as 17:30<br>Sábado das 09:00 as 14:00**",
+            "blockClass": "footer-horario"
+        }
+    },
+    "flex-layout.row#row-footer-atendimento": {
+        "children": [
+            "flex-layout.col#col-atendimento-1",
+            "flex-layout.col#col-atendimento-2"
+        ],
+        "props": {
+            "blockClass": "row-red-green",
+            "colGap": 4,
+            "fullWidth": true,
+            "horizontalAlign": "center"
+        }
+    },
+    "flex-layout.col#col-atendimento-1": {
+        "children": [
+            "rich-text#footer-atendimento-1"
+        ]
+    },
+    "rich-text#footer-atendimento-1": {
+        "props": {
+            "text": "**CONHEÇA NOSSA LOJA FÍSICA**",
+            "blockClass": "footer-atendimento-red"
+        }
+    },
+    "flex-layout.col#col-atendimento-2": {
+        "children": [
+            "rich-text#footer-atendimento-2"
+        ]
+    },
+    "rich-text#footer-atendimento-2": {
+        "props": {
+            "text": "**ATENDIMENTO VIA WHATSAPP**",
+            "blockClass": "footer-atendimento-green"
+        }
+    },
+    "flex-layout.col#col-footer-4": {
+        "children": [
+            "rich-text#footer-7",
+            "rich-text#footer-8",
+            "rich-text#footer-9",
+            "rich-text#footer-10"
+        ],
+        "props": {
+            "blockClass": "redes-sociais-wrapper"
+        }
+    },
+    "rich-text#footer-7": {
+        "props": {
+            "text": "**Redes Sociais**",
+            "blockClass": "redes-sociais"
+        }
+    },
+    "rich-text#footer-8": {
+        "props": {
+            "text": "[/Matroninfo](https://www.facebook.com/Matroninfo)",
+            "blockClass": "footer-facebook"
+        }
+    },
+    "rich-text#footer-9": {
+        "props": {
+            "text": "[@matron_informatica](https://www.instagram.com/matron_informatica/)",
+            "blockClass": "footer-instagram"
+        }
+    },
+    "rich-text#footer-10": {
+        "props": {
+            "text": "[@Matroninfo](https://twitter.com/Matroninfo)",
+            "blockClass": "footer-twitter"
+        }
+    },
+    "flex-layout.row#footer-2-desktop": {
+        "children": [
+            "flex-layout.col#col-pagamento",
+            "flex-layout.col#col-seguranca"
+        ],
+        "props": {
+            "blockClass": "row-pagament-e-seguranca",
+            "fullWidth": true,
+            "colGap": 10
+        }
+    },
+    "flex-layout.col#col-pagamento": {
+        "children": [
+            "flex-layout.row#row-pagamento"
+        ]
+    },
+    "flex-layout.row#row-pagamento": {
+        "children": [
+            "rich-text#pagamento",
+            "image#pagamento1",
+            "image#pagamento2",
+            "image#pagamento3",
+            "image#pagamento4",
+            "image#pagamento5",
+            "image#pagamento6",
+            "image#pagamento7",
+            "image#pagamento8"
+        ],
+        "props": {
+            "colGap": 0,
+            "colSizing": "auto",
+            "blockClass": "pag-seg-row"
+        }
+    },
+    "rich-text#pagamento": {
+        "props": {
+            "blockClass": "titulo-pagament-seguranca",
+            "text": "**Pagamento**"
+        }
+    },
+    "image#pagamento1": {
+        "props": {
+            "src": "/arquivos/matron-footer-flag-amex.svg",
+            "alt": "Amex",
+            "blockClass": "payments-footer",
+            "maxHeight": 30
+        }
+    },
+    "image#pagamento2": {
+        "props": {
+            "src": "/arquivos/matron-footer-flag-aura.svg",
+            "alt": "Aura",
+            "blockClass": "payments-footer",
+            "maxHeight": 30
+        }
+    },
+    "image#pagamento3": {
+        "props": {
+            "src": "/arquivos/matron-footer-flag-diners.svg",
+            "alt": "Diners",
+            "blockClass": "payments-footer",
+            "maxHeight": 30
+        }
+    },
+    "image#pagamento4": {
+        "props": {
+            "src": "/arquivos/matron-footer-flag-elo.svg",
+            "alt": "Elo",
+            "blockClass": "payments-footer",
+            "maxHeight": 30
+        }
+    },
+    "image#pagamento5": {
+        "props": {
+            "src": "/arquivos/matron-footer-flag-hipercard.svg",
+            "alt": "Hipercard",
+            "blockClass": "payments-footer",
+            "maxHeight": 30
+        }
+    },
+    "image#pagamento6": {
+        "props": {
+            "src": "/arquivos/matron-footer-flag-mastercard.svg",
+            "alt": "Mastercard",
+            "blockClass": "payments-footer",
+            "maxHeight": 30
+        }
+    },
+    "image#pagamento7": {
+        "props": {
+            "src": "/arquivos/matron-footer-flag-pix.svg",
+            "alt": "Pix",
+            "blockClass": "payments-footer",
+            "maxHeight": 30
+        }
+    },
+    "image#pagamento8": {
+        "props": {
+            "src": "/arquivos/matron-footer-flag-visa.svg",
+            "alt": "Visa",
+            "blockClass": "payments-footer",
+            "maxHeight": 30
+        }
+    },
+
+
+    "flex-layout.col#col-seguranca": {
+        "children": [
+            "flex-layout.row#row-seguranca"
+        ]
+    },
+    "flex-layout.row#row-seguranca": {
+        "children": [
+            "rich-text#seguranca",
+            "image#seguranca1",
+            "image#seguranca2"
+        ],
+        "props": {
+            "blockClass": ["pag-seg-row", "seg"],
+            "fullWidth": false,
+            "preventHorizontalStretch": true,
+            "colGap": 4
+        }
+    },
+    "rich-text#seguranca": {
+        "props": {
+            "blockClass": "titulo-pagament-seguranca",
+            "text": "**Seguranca**"
+        }
+    },
+    "image#seguranca1": {
+        "props": {
+            "src": "/arquivos/matron-footer-security-lets-stamp.svg",
+            "alt": "Amex",
+            "blockClass": "payments-footer",
+            "maxHeight": 80
+        }
+    },
+    "image#seguranca2": {
+        "props": {
+            "src": "/arquivos/matron-footer-security-PCI-stamp.png",
+            "alt": "Aura",
+            "blockClass": "payments-footer",
+            "maxHeight": 80
+        }
+    },
+
+    "flex-layout.row#footer-3-desktop": {
+        "children": [
+            "flex-layout.col#col-copyright",
+            "flex-layout.col#col-agencia"
+        ],
+        "props": {
+            "blockClass": "copyright-wrapper",
+            "fullWidth": true
+        }
+    },
+    "flex-layout.col#col-copyright": {
+        "children": [
+            "flex-layout.row#row-copyright"
+        ]
+    },
+    "flex-layout.row#row-copyright": {
+        "children": [
+            "rich-text#copyright"
+        ],
+        "props": {
+            "blockClass": "copyright-text-wrapper",
+            "colGap": 4,
+            "colSizing": "equal"
+        }
+    },
+    "rich-text#copyright": {
+        "props": {
+            "text": "Copyright 2022 - Todos os direitos reservados a Matron CNPJ 10.372.701/0001-05 - Rua Aurora, 166 - Loja 166C - Centro - SP",
+            "blockClass": "copyright-text"
+        }
+    },
+
+    "flex-layout.col#col-agencia": {
+        "children": [
+            "flex-layout.row#row-agencia"
+        ],
+        "props": {
+            "blockClass": "agencia-wrapper"
+        }
+    },
+    "flex-layout.row#row-agencia": {
+        "children": [
+            "rich-text#agencia",
+            "image#aplicah",
+            "image#vtex"
+        ],
+        "props": {
+            "blockClass": ["agencia-row", "agencia"],
+            "fullWidth": false,
+            "preventHorizontalStretch": true,
+            "colGap": 4
+        }
+    },
+    "rich-text#agencia": {
+        "props": {
+            "text": "Developed by",
+            "blockClass": "text-developed-by"
+        }
+    },
+    "image#aplicah": {
+        "props": {
+            "src": "/arquivos/aplicahnovo.png",
+            "maxHeight": 24
+        }
+    },
+    "image#vtex": {
+        "props": {
+            "src": "/arquivos/vtexnovo.png",
+            "maxHeight": 24
+        }
+    }
+}

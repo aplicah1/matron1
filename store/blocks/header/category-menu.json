@@ -1,0 +1,626 @@
+{
+    "vtex.menu@2.x:menu#category-menu": {
+        "props": {
+            "experimentalOptimizeRendering": true
+        },
+        "children": [
+            "menu-item#category-conectividade",
+            "menu-item#category-perifericos",
+            "menu-item#hardware"
+        ]
+    },
+    "menu-item#category-conectividade": {
+        "props": {
+            "id": "menu-item-category-conectividade",
+            "type": "custom",
+            "iconId": "nav-menu-games",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/conectividade",
+                "noFollow": false,
+                "tagTitle": "Conectividade",
+                "text": "Conectividade"
+            },
+            "blockClass": "menu-item-conectividade"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-conectividade"
+        ]
+    },
+    "vtex.menu@2.x:submenu#category-conectividade": {
+        "props": {
+            "width": "auto"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-conectividade"
+        ]
+    },
+    "vtex.menu@2.x:menu#category-conectividade": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#category-switch",
+            "menu-item#category-roteador",
+            "menu-item#category-access-point",
+            "menu-item#category-adaptadores"
+        ]
+    },
+    "menu-item#category-switch": {
+        "props": {
+            "id": "menu-item-category-switch",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/conectividade/switch/",
+                "noFollow": false,
+                "tagTitle": "Switch",
+                "text": "Switch"
+            }
+        }
+    },
+    "menu-item#category-roteador": {
+        "props": {
+            "id": "menu-item-category-roteador",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/conectividade/roteador",
+                "noFollow": false,
+                "tagTitle": "Roteador",
+                "text": "Roteador"
+            }
+        }
+    },
+    "menu-item#category-access-point": {
+        "props": {
+            "id": "menu-item-category-access-point",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/conectividade/access-point/",
+                "noFollow": false,
+                "tagTitle": "Access Point",
+                "text": "Access Point"
+            }
+        }
+    },
+    "menu-item#category-adaptadores": {
+        "props": {
+            "id": "menu-item-category-adaptadores",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/conectividade/adaptadores/",
+                "noFollow": false,
+                "tagTitle": "Adaptadores",
+                "text": "Adaptadores"
+            }
+        }
+    },
+    "menu-item#category-perifericos": {
+        "props": {
+            "id": "menu-item-category-perifericos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/",
+                "noFollow": false,
+                "tagTitle": "Periféricos",
+                "text": "Periféricos"
+            },
+            "blockClass": "menu-item-perifericos"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-perifericos"
+        ]
+    },
+    "vtex.menu@2.x:submenu#category-perifericos": {
+        "props": {
+            "width": "auto"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-perifericos"
+        ]
+    },
+    "vtex.menu@2.x:menu#category-perifericos": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#category-mouse",
+            "menu-item#category-teclado",
+            "menu-item#category-kit-teclado-e-mouse",
+            "menu-item#category-mousepad",
+            "menu-item#category-apresentador",
+            "menu-item#category-microfone",
+            "menu-item#category-fones-e-headset",
+            "menu-item#category-gabinete",
+            "menu-item#category-monitor",
+            "menu-item#category-caixa-de-som",
+            "menu-item#category-projetor",
+            "menu-item#category-mesa-digitalizadora",
+            "menu-item#category-camera"
+        ]
+    },
+    "menu-item#category-mouse": {
+        "props": {
+            "id": "menu-item-category-mouse",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/mouse/",
+                "noFollow": false,
+                "tagTitle": "Mouse",
+                "text": "Mouse"
+            }
+        }
+    },
+    "menu-item#category-teclado": {
+        "props": {
+            "id": "menu-item-category-teclado",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/teclado/",
+                "noFollow": false,
+                "tagTitle": "Teclado",
+                "text": "Teclado"
+            }
+        }
+    },
+    "menu-item#category-kit-teclado-e-mouse": {
+        "props": {
+            "id": "menu-item-category-kit-teclado-e-mouse",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/kit-teclado-e-mouse/",
+                "noFollow": false,
+                "tagTitle": "Kit Teclado e Mouse",
+                "text": "Kit Teclado e Mouse"
+            }
+        }
+    },
+    "menu-item#category-mousepad": {
+        "props": {
+            "id": "menu-item-category-mousepad",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/mousepad/",
+                "noFollow": false,
+                "tagTitle": "Mousepad",
+                "text": "Mousepad"
+            }
+        }
+    },
+    "menu-item#category-apresentador": {
+        "props": {
+            "id": "menu-item-category-apresentador",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/apresentador/",
+                "noFollow": false,
+                "tagTitle": "Apresentador",
+                "text": "Apresentador"
+            }
+        }
+    },
+    "menu-item#category-microfone": {
+        "props": {
+            "id": "menu-item-category-microfone",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/microfone/",
+                "noFollow": false,
+                "tagTitle": "Microfone",
+                "text": "Microfone"
+            }
+        }
+    },
+    "menu-item#category-fones-e-headset": {
+        "props": {
+            "id": "menu-item-category-fones-e-headset",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/fones-e-headset/",
+                "noFollow": false,
+                "tagTitle": "Fones e Headset",
+                "text": "Fones e Headset"
+            }
+        }
+    },
+    "menu-item#category-gabinete": {
+        "props": {
+            "id": "menu-item-category-gabinete",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/gabinete/",
+                "noFollow": false,
+                "tagTitle": "Gabinete",
+                "text": "Gabinete"
+            }
+        }
+    },
+    "menu-item#category-monitor": {
+        "props": {
+            "id": "menu-item-category-monitor",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/monitor/",
+                "noFollow": false,
+                "tagTitle": "Monitor",
+                "text": "Monitor"
+            }
+        }
+    },
+    "menu-item#category-caixa-de-som": {
+        "props": {
+            "id": "menu-item-category-caixa-de-som",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/caixa-de-som/",
+                "noFollow": false,
+                "tagTitle": "Caixa de Som",
+                "text": "Caixa de Som"
+            }
+        }
+    },
+    "menu-item#category-projetor": {
+        "props": {
+            "id": "menu-item-category-projetor",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/projetor/",
+                "noFollow": false,
+                "tagTitle": "Projetor",
+                "text": "Projetor"
+            }
+        }
+    },
+    "menu-item#category-mesa-digitalizadora": {
+        "props": {
+            "id": "menu-item-category-mesa-digitalizadora",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/mesa-digitalizadora/",
+                "noFollow": false,
+                "tagTitle": "Mesa Digitalizadora",
+                "text": "Mesa Digitalizadora"
+            }
+        }
+    },
+    "menu-item#category-camera": {
+        "props": {
+            "id": "menu-item-category-camera",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/perifericos/camera/",
+                "noFollow": false,
+                "tagTitle": "Câmera",
+                "text": "Câmera"
+            }
+        }
+    },
+    "menu-item#hardware": {
+        "props": {
+            "id": "menu-item-hardware",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware",
+                "noFollow": true,
+                "tagTitle": "Hardware",
+                "text": "Hardware"
+            },
+            "blockClass": "menu-item-hardware"
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-hardware"
+        ]
+    },
+    "vtex.menu@2.x:submenu#category-hardware": {
+        "props": {
+            "width": "auto"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-hardware"
+        ]
+    },
+    "vtex.menu@2.x:menu#category-hardware": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#category-hd-ssd",
+            "menu-item#category-hd-externo",
+            "menu-item#category-hd-interno",
+            "menu-item#category-case-para-hd",
+            "menu-item#category-pendrive",
+            "menu-item#category-cartao-de-memoria",
+            "menu-item#category-gravador",
+            "menu-item#category-placa-de-video",
+            "menu-item#category-placa-de-som",
+            "menu-item#category-tv-e-captura",
+            "menu-item#category-memoria-ram",
+            "menu-item#category-placa-mae",
+            "menu-item#category-processador",
+            "menu-item#category-cooler",
+            "menu-item#category-pasta-termica"
+        ]
+    },
+    "menu-item#category-hd-ssd": {
+        "props": {
+            "id": "menu-item-category-hd-ssd",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/hd-ssd/",
+                "noFollow": false,
+                "tagTitle": "HD SSD",
+                "text": "HD SSD"
+            }
+        }
+    },
+    "menu-item#category-hd-externo": {
+        "props": {
+            "id": "menu-item-category-hd-externo",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/hd-externo/",
+                "noFollow": false,
+                "tagTitle": "HD Externo",
+                "text": "HD Externo"
+            }
+        }
+    },
+    "menu-item#category-hd-interno": {
+        "props": {
+            "id": "menu-item-category-hd-interno",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/hd-interno/",
+                "noFollow": false,
+                "tagTitle": "HD Interno",
+                "text": "HD Interno"
+            }
+        }
+    },
+    "menu-item#category-case-para-hd": {
+        "props": {
+            "id": "menu-item-category-case-para-hd",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/case-para-hd/",
+                "noFollow": false,
+                "tagTitle": "Case para HD",
+                "text": "Case para HD"
+            }
+        }
+    },
+    "menu-item#category-pendrive": {
+        "props": {
+            "id": "menu-item-category-pendrive",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/pendrive/",
+                "noFollow": false,
+                "tagTitle": "Pendrive",
+                "text": "Pendrive"
+            }
+        }
+    },
+    "menu-item#category-cartao-de-memoria": {
+        "props": {
+            "id": "menu-item-category-cartao-de-memoria",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/cartao-de-memoria/",
+                "noFollow": false,
+                "tagTitle": "Cartão de Memória",
+                "text": "Cartão de Memória"
+            }
+        }
+    },
+    "menu-item#category-gravador": {
+        "props": {
+            "id": "menu-item-category-gravador",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/gravador/",
+                "noFollow": false,
+                "tagTitle": "Gravador",
+                "text": "Gravador"
+            }
+        }
+    },
+    "menu-item#category-placa-de-video": {
+        "props": {
+            "id": "menu-item-category-placa-de-video",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/placa-de-video/",
+                "noFollow": false,
+                "tagTitle": "Placa de Vídeo",
+                "text": "Placa de Vídeo"
+            }
+        }
+    },
+    "menu-item#category-placa-de-som": {
+        "props": {
+            "id": "menu-item-category-placa-de-som",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/placa-de-som/",
+                "noFollow": false,
+                "tagTitle": "Placa de Som",
+                "text": "Placa de Som"
+            }
+        }
+    },
+    "menu-item#category-tv-e-captura": {
+        "props": {
+            "id": "menu-item-category-tv-e-captura",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/tv-e-captura/",
+                "noFollow": false,
+                "tagTitle": "TV e Captura",
+                "text": "TV e Captura"
+            }
+        }
+    },
+    "menu-item#category-memoria-ram": {
+        "props": {
+            "id": "menu-item-category-memoria-ram",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/memoria-ram/",
+                "noFollow": false,
+                "tagTitle": "Memória RAM",
+                "text": "Memória RAM"
+            }
+        }
+    },
+    "menu-item#category-placa-mae": {
+        "props": {
+            "id": "menu-item-category-placa-mae",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/placa-mae/",
+                "noFollow": false,
+                "tagTitle": "Placa Mãe",
+                "text": "Placa Mãe"
+            }
+        }
+    },
+    "menu-item#category-processador": {
+        "props": {
+            "id": "menu-item-category-processador",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/processador/",
+                "noFollow": false,
+                "tagTitle": "Processador",
+                "text": "Processador"
+            }
+        }
+    },
+    "menu-item#category-cooler": {
+        "props": {
+            "id": "menu-item-category-cooler",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/cooler/",
+                "noFollow": false,
+                "tagTitle": "Cooler",
+                "text": "Cooler"
+            }
+        }
+    },
+    "menu-item#category-pasta-termica": {
+        "props": {
+            "id": "menu-item-category-pasta-termica",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/pasta-termica/",
+                "noFollow": false,
+                "tagTitle": "Pasta Térmica",
+                "text": "Pasta Térmica"
+            }
+        }
+    }
+}

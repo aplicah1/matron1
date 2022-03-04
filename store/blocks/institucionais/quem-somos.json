@@ -1,0 +1,174 @@
+{
+    "store.custom#quem-somos": {
+        "blocks": [
+            "flex-layout.row#quem-somos"
+        ]
+    },
+
+    "flex-layout.row#quem-somos": {
+        "props": {
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "flex-layout.col#quem-somos-1",
+            "flex-layout.col#quem-somos-2"
+        ]
+    },
+    "flex-layout.col#quem-somos-1": {
+        "props": {
+            "width": "22%",
+            "blockClass": "menu-institucional"
+        },
+        "children": [
+            "rich-text#title-menu-institucional",
+            "rich-text#menu-institucional-1-active",
+            "rich-text#menu-institucional-2",
+            "rich-text#menu-institucional-3",
+            "rich-text#menu-institucional-4",
+            "rich-text#menu-institucional-5",
+            "rich-text#menu-institucional-6",
+            "rich-text#menu-institucional-7",
+            "rich-text#menu-institucional-8"
+        ]
+    },
+    "rich-text#title-menu-institucional": {
+        "props": {
+            "blockClass": "title-institucional",
+            "text": "### Institucional"
+        }
+    },
+    "rich-text#menu-institucional-1": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-1"],
+            "text": "[Quem Somos](/quem-somos)"
+        }
+    },
+    "rich-text#menu-institucional-1-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-1", "menu-institucional-active"],
+            "text": "[Quem Somos](/quem-somos)"
+        }
+    },
+    "rich-text#menu-institucional-2": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-2"],
+            "text": "[Como Chegar?](/como-chegar)"
+        }
+    },
+    "rich-text#menu-institucional-2-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-2", "menu-institucional-active"],
+            "text": "[Como Chegar?](/como-chegar)"
+        }
+    },
+    "rich-text#menu-institucional-3": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-3"],
+            "text": "[Delivery](/delivery)"
+        }
+    },
+    "rich-text#menu-institucional-3-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-3", "menu-institucional-active"],
+            "text": "[Delivery](/delivery)"
+        }
+    },
+    "rich-text#menu-institucional-4": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-4"],
+            "text": "[Serviços e Manutenção](/servicos-e-manutencao)"
+        }
+    },
+    "rich-text#menu-institucional-4-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-4", "menu-institucional-active"],
+            "text": "[Serviços e Manutenção](/servicos-e-manutencao)"
+        }
+    },
+    "rich-text#menu-institucional-5": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-5"],
+            "text": "[Fale Conosco](/fale-conosco)"
+        }
+    },
+    "rich-text#menu-institucional-5-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-5", "menu-institucional-active"],
+            "text": "[Fale Conosco](/fale-conosco)"
+        }
+    },
+    "rich-text#menu-institucional-6": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-6"],
+            "text": "[Suporte e Devoluções](/suporte-e-devolucoes)"
+        }
+    },
+    "rich-text#menu-institucional-6-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-6", "menu-institucional-active"],
+            "text": "[Suporte e Devoluções](/suporte-e-devolucoes)"
+        }
+    },
+    "rich-text#menu-institucional-7": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-7"],
+            "text": "[Política de Uso](/politica-de-uso)"
+        }
+    },
+    "rich-text#menu-institucional-7-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-7", "menu-institucional-active"],
+            "text": "[Política de Uso](/politica-de-uso)"
+        }
+    },
+    "rich-text#menu-institucional-8": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-8"],
+            "text": "[Formas de Pagamento](/formas-de-pagamento)"
+        }
+    },
+    "rich-text#menu-institucional-8-active": {
+        "props": {
+            "blockClass": ["menu-institucional", "menu-institucional-8", "menu-institucional-active"],
+            "text": "[Formas de Pagamento](/formas-de-pagamento)"
+        }
+    },
+
+
+    "flex-layout.col#quem-somos-2": {
+        "props": {
+            "width": "78%",
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "rich-text#titulo-quem-somos-1",
+            "rich-text#conteudo-quem-somos-1",
+            "image#loja1",
+            "image#loja2"
+        ]
+    },
+    "rich-text#titulo-quem-somos-1": {
+        "props": {
+            "blockClass": "title-content-institucional",
+            "text": "## Quem Somos"
+        }
+    },
+    "rich-text#conteudo-quem-somos-1": {
+        "props": {
+            "blockClass": ["content-institucional", "content-institucional-quem-somos"],
+            "text": "A Matron é uma empresa especializada em vendas e assistência técnica de equipamentos para informática, bem como seus acessórios.<br>No mercado desde 2008, atualmente conta com uma loja própria em São Paulo, na Rua Aurora e laboratório próprio para efetuar serviços em computadores. Além de uma grande oferta na linha Pcs, ainda oferece os mais diversos tipos de acessórios, desde tablets até suprimentos para redes sem fio.<br>Nossa loja está focada na prestação de serviços de assistência técnica e na venda de Pcs e acessórios.Através de nossa loja virtual você poderá contar com marcas de sucesso, já consagradas no mercado, onde podemos citar:<br><br>• Microsoft• Wacom• Creative • LaCie• TP-Link• Seagate• Gigabyte• Trust• Kingston• OCZ • Asus• Intel• AMD• Coolermaster• LG• Samsung E muito mais<br><br>Conheça um pouco mais de nossa linha de produtos e serviços e tenha a garantia de estar fazendo negócio com uma empresa séria e que lhe dará um atendimento exemplar seja em nosso site ou em nossa loja física.<br>Nosso compromisso pode ser traduzido por liderança em tecnologia, trabalho com produtos de excelente qualidade e confiabilidade dos melhores fabricantes do mercado.<br><br>Dados Bancários:<br>Banco: 341 - Itaú<br>Agência: 0411 (Santa Efigênia)<br>Conta Corrente: 47.080-0<br>Favorecido: Matron Informática Ltda.<br><br>Matron Informática Ltda-ME<br>CNPJ.: 10.372.701/0001-05<br>Fone.: (11) 3222-1334<br>e-mail: sac@matron.com.br<br>Endereço: Rua Aurora 166 - Loja 166C<br>Cep.: 01209-000 - Santa Efigênia<br>Cidade: São Paulo<br>Estado: SP"
+        }
+    },
+    "image#loja1": {
+        "props": {
+            "src": "https://www.matron.com.br/arquivos/Loja-02.jpg",
+            "maxHeight": 250
+        }
+    },
+    "image#loja2": {
+        "props": {
+            "src": "https://www.matron.com.br/arquivos/Loja-01.jpg",
+            "maxHeight": 250
+        }
+    }
+}

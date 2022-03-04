@@ -1,0 +1,11 @@
+.expandIcon {
+    color: #727273;
+}
+
+.cartIcon {
+    width: 50px;
+    overflow: visible!important;
+    position: relative;
+    top: -10px;
+    left: -18px;
+}

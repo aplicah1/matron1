@@ -1,0 +1,42 @@
+{
+    "vtex.menu@2.x:menu#textos-topo": {
+        "children": [
+            "slider-layout#texto-topo"
+        ]
+    },
+    "slider-layout#texto-topo": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": true,
+            "showNavigationArrows": "desktopOnly",
+            "arrowSize": 10,
+            "showPaginationDots": "never",
+            "blockClass": "carousel-texto-topo"
+        },
+        "children": ["rich-text#1", "rich-text#2", "rich-text#3"]
+    },
+
+    "rich-text#1": {
+        "props": {
+            "text": "Aceitamos pagamentos via PIX!",
+            "blockClass": "carousel-texto-topo"
+        }
+    },
+    "rich-text#2": {
+        "props": {
+            "text": "Aceitamos pagamentos via PIX!",
+            "blockClass": "carousel-texto-topo"
+        }
+    },
+    "rich-text#3": {
+        "props": {
+            "text": "Aceitamos pagamentos via PIX!",
+            "blockClass": "carousel-texto-topo"
+        }
+    }
+}

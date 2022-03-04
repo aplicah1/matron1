@@ -1,0 +1,176 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "sticky-layout#2-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#textos-topo"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#2-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#3-desktop":{
+    "props":{
+      "blockClass":"main-menu"
+    },
+    "children":[
+      "flex-layout.col#category-menu"
+    ]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#barra-busca",
+      "login",
+      "flex-layout.col#favoritos",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass":"logo-wrapper"
+    },
+    "children": ["logo#desktop"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Matron",
+      "href": "/",
+      "url": "/arquivos/matron-logo-io.png",
+      "width": "180"
+    }
+  },
+  "flex-layout.col#barra-busca":{
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass":"barra-busca"
+    }
+  },
+  "search-bar":{
+    "props":{
+      "placeholder":"O que você procura?"
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "hasGoogleOneTap":true,
+      "iconLabel":"Seja bem vindo",
+      "labelClasses":"botao-login"
+    }
+  },
+  "flex-layout.col#favoritos":{
+    "children": [
+      "link#link-favoritos"
+    ],
+    "props": {
+      "blockClass":"favoritos-wrapper"
+    }
+  },
+  "link#link-favoritos":{
+    "props": {
+      "href": "/account#/wishlist",
+      "label": "Favoritos"
+    }
+  },
+  
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile","flex-layout.row#2-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-conectividade",
+      "menu-item#category-perifericos",
+      "menu-item#hardware"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Matron",
+      "href": "/",
+      "url": "/arquivos/matron-logo-io.png",
+      "width": "140"
+    }
+  },
+  "flex-layout.row#2-mobile" : {
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass":"barra-busca-mobile"
+    }
+  }
+}

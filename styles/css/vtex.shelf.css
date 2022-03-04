@@ -1,0 +1,13 @@
+.relatedProducts .title {
+    color: #303030;
+    font-size: 27px;
+    text-align: left;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+
+.relatedProducts {
+    width: 95%;
+    margin: 0 auto 50px;
+}
