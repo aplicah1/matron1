@@ -1,0 +1,56 @@
+{
+    "store.custom#como-chegar": {
+        "blocks": [
+            "flex-layout.row#como-chegar"
+        ]
+    },
+
+    "flex-layout.row#como-chegar": {
+        "props": {
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "flex-layout.col#como-chegar-1",
+            "flex-layout.col#como-chegar-2"
+        ]
+    },
+    "flex-layout.col#como-chegar-1": {
+        "props": {
+            "width": "22%",
+            "blockClass": "menu-institucional"
+        },
+        "children": [
+            "rich-text#title-menu-institucional",
+            "rich-text#menu-institucional-1",
+            "rich-text#menu-institucional-2-active",
+            "rich-text#menu-institucional-3",
+            "rich-text#menu-institucional-4",
+            "rich-text#menu-institucional-5",
+            "rich-text#menu-institucional-6",
+            "rich-text#menu-institucional-7",
+            "rich-text#menu-institucional-8"
+        ]
+    },
+    "flex-layout.col#como-chegar-2": {
+        "props": {
+            "width": "78%",
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "rich-text#titulo-como-chegar-1",
+            "rich-text#conteudo-como-chegar-1"
+        ]
+    },
+    "rich-text#titulo-como-chegar-1": {
+        "props": {
+            "blockClass": "title-content-institucional",
+            "text": "## Como Chegar"
+        }
+    },
+    "rich-text#conteudo-como-chegar-1": {
+        "props": {
+            "blockClass": "content-institucional",
+            "text": "Instalado no centro de São Paulo na região da Santa Efigênia, muito conhecida por trabalhar com informática e tecnologia a preços acessíveis!<br><br>A Matron fica localizada na:<br>Rua Aurora, 166 - Loja 166C - Santa Ifigênia<br>Cep.: 01209-000 - São Paulo - SP<br>Fone/Fax.: (11) 3222-1334<br><br>Horário de Funcionamento: De Segunda a Sexta das 8:30 ás 17:30 e aos Sábados das 9:00 ás 14:00"
+        }
+    }
+}

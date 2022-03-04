@@ -1,0 +1,11 @@
+.specificationValue {
+    font-size: 13px;
+    color: #303030;
+    line-height: 20px;
+}
+
+.specificationName {
+    font-size: 13px;
+    font-weight: bold;
+    color: #303030;
+}

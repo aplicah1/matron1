@@ -1,0 +1,58 @@
+{
+    "store.custom#suporte-e-devolucoes": {
+        "blocks": [
+            "flex-layout.row#suporte-e-devolucoes"
+        ]
+    },
+
+    "flex-layout.row#suporte-e-devolucoes": {
+        "props": {
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "flex-layout.col#suporte-e-devolucoes-1",
+            "flex-layout.col#suporte-e-devolucoes-2"
+        ]
+    },
+    "flex-layout.col#suporte-e-devolucoes-1": {
+        "props": {
+            "width": "22%",
+            "blockClass": "menu-institucional"
+        },
+        "children": [
+            "rich-text#title-menu-ajuda",
+            "rich-text#menu-institucional-1",
+            "rich-text#menu-institucional-2",
+            "rich-text#menu-institucional-3",
+            "rich-text#menu-institucional-4",
+            "rich-text#menu-institucional-5",
+            "rich-text#menu-institucional-6-active",
+            "rich-text#menu-institucional-7",
+            "rich-text#menu-institucional-8"
+        ]
+    },
+
+    "flex-layout.col#suporte-e-devolucoes-2": {
+        "props": {
+            "width": "78%",
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "rich-text#titulo-suporte-e-devolucoes-1",
+            "rich-text#conteudo-suporte-e-devolucoes-1",
+            "image#logo-matron"
+        ]
+    },
+    "rich-text#conteudo-suporte-e-devolucoes-1": {
+        "props": {
+            "blockClass": "content-institucional",
+            "text": "Como trocar ou devolver produtos e utilizar o suporte na matron?<br>Caso você identifique algum problema técnico com o produto, fale com o nosso departamento de Suporte Técnico no telefone (0xx11) 3222-1334, e-mail: sac@matron.com.br ou através do Fale Conosco, para que possamos identificar o defeito e resolver o problema no menor tempo possível.<br>Considerações gerais:<br>O consumidor on-line tem até 7 dias para desistir da compra, contados a partir do recebimento do produto, mesmo não tendo defeito.<br>A devolução dentro deste prazo, dá ao comprador o direito a restituição integral do valor pago.<br>A troca do produto se dará em um prazo máximo de 30 dias, a contar do recebimento do produto em nossa Assistência Técnica.<br>O produto necessita ser restituído em igual quantidade e dentro das características com que foi fornecido, sem qualquer dano provocado.<br>Os contatos podem ser feitos junto à loja através de telefone, fax ou Fale Conosco, preferencialmente por escrito.<br><br>Devolução:<br>Se for necessária à devolução do produto, favor observar os seguintes requisitos:<br>Solicite a aprovação de sua devolução pelo SAC da Matron (11) 3222-1334, e-mail: sac@matron.com.br ou através de nosso Fale Conosco.<br>O produto deve ser devidamente acondicionado em sua embalagem original para que eventuais danos físicos não anulem a garantia e suspendam o recebimento.<br>O produto deve estar de posse de todos os seus componentes e acessórios (Nota Fiscal, manuais, cabos, discos, termos de Garantia, etc.).<br><br>Cancelamento:<br>O reembolso (do valor integral do produto) será realizado pelo mesmo meio de pagamento:<br>1) Através de cartão de crédito utilizado na compra (podendo ocorrer em até 2 faturas subseqüentes a do débito).<br>2) Crédito em conta corrente em até 10 dias úteis (para pagamento efetuado com boleto bancário, depósito em conta corrente ou transferência eletrônica).<br>3) As solicitações serão processadas assim que recebermos o(s) produto(s) de volta em nosso Centro de Logística.<br>Troca:<br>Se for necessária à troca do produto, favor observar os seguintes requisitos:<br>Solicite a aprovação de sua devolução pelo SAC Matron (0xx11) 3222-1334, e-mail: sac@matron.com.br ou através de nosso Fale Conosco.<br>O produto deve ser devidamente acondicionado em sua embalagem original para que eventuais danos físicos não anulem a garantia e suspendam o recebimento.<br>O produto deve estar de posse de todos os seus componentes e acessórios (Nota Fiscal, manuais, cabos, discos, termos de Garantia, etc.)."
+        }
+    },
+    "rich-text#titulo-suporte-e-devolucoes-1": {
+        "props": {
+            "blockClass": "title-content-institucional",
+            "text": "## Suporte e Devoluções"
+        }
+    }
+}

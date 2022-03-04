@@ -1,113 +1,244 @@
 .notificationBarContainer {
-  background-color: #e6f1e6;
-  color: #03034e;
-  font-weight: 700;
-  font-size: 12px;
-  text-decoration: underline;
+    background-color: #e6f1e6;
+    color: #03034e;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: underline;
 }
 
 .infoCardContainer--info-card-home {
-  max-width: 1520px;
-  margin: 0 auto;
-  background-color: #e6f1e6;
-  padding: 0px;
+    max-width: 1520px;
+    margin: 0 auto;
+    background-color: #e6f1e6;
+    padding: 0px;
 }
 
 .newsletter {
-  background-color: #03054e;
-  max-width: 1528px;
-  margin: 0 auto;
+    background-color: #03054e;
+    max-width: 1528px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.newsletter::before {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44.817' height='40.663' viewBox='0 0 44.817 40.663'%3E%3Cg id='noun_Mail_4292312' transform='translate(-20 -22.76)'%3E%3Cpath id='Caminho_322' data-name='Caminho 322' d='M70.7,49.24H67.788v5.229a5.512,5.512,0,0,1-5.5,5.5H48.89v4.87a1.427,1.427,0,0,0,1.427,1.4H65.905a.874.874,0,0,1,.568.209L70.536,69.9a.971.971,0,0,0,1.591-.747V50.674A1.434,1.434,0,0,0,70.7,49.24Z' transform='translate(-7.311 -6.701)' fill='%23fff'/%3E%3Cpath id='Caminho_323' data-name='Caminho 323' d='M57.265,47.76V25.053a2.293,2.293,0,0,0-2.293-2.293H22.293A2.293,2.293,0,0,0,20,25.053V54.744a1.546,1.546,0,0,0,2.547,1.173l6.521-5.527a1.4,1.4,0,0,1,.911-.336H54.972a2.286,2.286,0,0,0,2.293-2.293Z' transform='translate(0 0)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 30%;
+    left: 1%;
+}
+
+.newsletter .hideDecorators {
+    background-color: #fff;
+}
+
+.searchBarContainer {
+    width: 500px;
+    margin-left: 50px;
 }
 
 .newsletter .container {
-  padding: 60px 10px;
+    padding: 20px 10px;
 }
 
 .label {
-  color: #fff;
-  font-size: 26px;
+    color: #fff;
+    font-size: 26px;
 }
 
-.inputGroup {
-  padding-bottom: 4px;
-  display: flex;
-  color: #fff;
+.newsletter .inputGroup {
+    padding: 0;
+    display: flex;
+    color: #AFAFAF;
+}
+
+.confirmationTitle,
+.confirmationText {
+    color: #fff;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
-  background-color: transparent;
-  color: #fff;
-  border: none;
+    background-color: transparent;
+    color: #fff;
+    border: none;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
-  color: #fff;
-  font-size: 16px;
+    color: #fff;
+    font-size: 16px;
 }
 
 .inputGroup :global(.vtex-button) {
-  background-color: transparent;
-  color: #fff;
-  border: none;
-  margin-right: -24px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    margin-right: -24px;
+}
+
+.newsletter .inputGroup :global(.vtex-button) {
+    margin: 0;
 }
 
 .buttonContainer {
-  padding-top: 0px;
+    padding-top: 0px;
 }
 
 .imageElement--storePrint {
-  max-height: 300px;
-  margin-bottom: 20px;
+    max-height: 300px;
+    margin-bottom: 20px;
 }
 
 .skuSelectorContainer {
-  margin: 1rem 0;
+    margin: 1rem 0;
+}
+
+.newsletter .buttonContainer {
+    background-color: #2D752A;
+    padding: 0px 20px;
+    margin-left: 10px;
+    width: 20%;
+    border-radius: 3px;
+}
+
+.newsletter .label {
+    width: 18%;
+    padding: 0px 0;
+}
+
+@media(max-width:768px) {
+    .newsletter .label {
+        width: 100%;
+        padding: 0px 0;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .newsletter::before {
+        content: none;
+    }
+    .newsletter .buttonContainer {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .newsletter .inputGroup {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 640px) {
-  .newsletter .container {
-    padding: 140px;
-  }
-
-  .label {
-    font-size: 40px;
-  }
-
-  .infoCardContainer--info-card-home .infoCardTextContainer {
-    width: 30%;
-  }
-
-  .infoCardContainer--info-card-home .infoCardImageContainer {
-    width: 70%;
-  }
-
-  .imageElement--storePrint {
-    margin-bottom: 0px;
-    max-height: 600px;
-  }
+    .newsletter .container {
+        padding: 20px;
+    }
+    .newsletter .form {
+        display: flex;
+        width: 95%;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1380px;
+        justify-content: space-between;
+    }
+    .newsletter .label {
+        font-size: 17px;
+        color: #fff;
+        text-align: left;
+        font-weight: normal;
+    }
+    .newsletter .inputGroup {
+        width: 75%;
+    }
+    .label {
+        font-size: 40px;
+    }
+    .infoCardContainer--info-card-home .infoCardTextContainer {
+        width: 30%;
+    }
+    .infoCardContainer--info-card-home .infoCardImageContainer {
+        width: 70%;
+    }
+    .imageElement--storePrint {
+        margin-bottom: 0px;
+        max-height: 600px;
+    }
 }
 
 .productImagesContainer--quickview .carouselContainer {
-  justify-content: flex-start;
+    justify-content: flex-start;
 }
 
 .productImagesContainer--quickview .productImageTag {
-  object-fit: cover !important;
+    object-fit: cover !important;
 }
 
 .productImagesContainer--quickview .carouselGaleryThumbs {
-  display: none;
+    display: none;
 }
 
 .productImagesContainer--quickview .carouselGaleryCursor {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .productNameContainer {
-  color: #3f3f40;
-  font-weight: bold;
-  font-size: 30px;
+    color: #303030;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.productImagesContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.thumbImg {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.productImagesThumb {
+    text-align: center;
+    border: 1px solid #EBEBEB;
+}
+
+.newsletter {
+    background-color: #3d3d3d;
+}
+
+.productDescriptionContainer {
+    background-color: #fff;
+    padding: 30px 2.5%;
+    width: 95%!important;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.productDescriptionTitle {
+    color: #303030;
+    font-size: 22px;
+    font-weight: bold;
+    text-indent: 30px;
+}
+
+.productDescriptionTitle::before {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg id='noun_List_91728' transform='translate(-7 -4)'%3E%3Cpath id='Caminho_447' data-name='Caminho 447' d='M25,9.9a.073.073,0,0,0-.02-.06V5.24A1.246,1.246,0,0,0,23.74,4H19.08l.02.02H8.2A1.2,1.2,0,0,0,7,5.2H7V20.8A1.2,1.2,0,0,0,8.2,22H23.8A1.2,1.2,0,0,0,25,20.8V9.9ZM11.26,18.82a1.2,1.2,0,1,1,1.2-1.2A1.2,1.2,0,0,1,11.26,18.82ZM10,13.08a1.2,1.2,0,1,1,1.2,1.2A1.2,1.2,0,0,1,10,13.08Zm1.26-3.52a1.2,1.2,0,1,1,1.2-1.2A1.217,1.217,0,0,1,11.26,9.56ZM22,18.26H13.9V17.02H22Zm0-4.58H13.9v-1.2H22Zm0-4.72H13.9V7.76H22Z' fill='%23d11e33'/%3E%3C/g%3E%3C/svg%3E%0A");
+    height: 25px;
+    width: 25px;
+    display: block;
+    position: absolute;
+    background-position: center 5px;
+    background-repeat: no-repeat;
+}
+
+.productDescriptionText {
+    color: #303030;
+    font-size: 14px;
+    line-height: 23px;
 }

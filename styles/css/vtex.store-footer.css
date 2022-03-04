@@ -1,11 +1,18 @@
 .row--menu-row {
-  padding-right: 24px;
+    padding-right: 24px;
 }
 
 .row--menu-row .rowContainer {
-  align-items: flex-start;
+    align-items: flex-start;
 }
 
 .row--payment-methods {
-  padding-top: 16px;
+    padding-top: 16px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--footer-wrapper),
+:global(.vtex-flex-layout-0-x-flexRow--row-pagament-e-seguranca) {
+    padding: 20px 2.5%;
+    background-color: #262626;
+    border-bottom: 1px solid #fff;
 }

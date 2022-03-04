@@ -1,37 +1,39 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "list-context.image-list#banner-principal",
+      "list-context.image-list#carrossel-marcas",
+      "responsive-layout.desktop#grid-banners-desktop",
+      "responsive-layout.mobile#grid-banners-mobile",
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#shelf-title-1",
+      "flex-layout.row#shelf-1",
+      "flex-layout.row#banners-centrais",
+      "flex-layout.row#shelf-title-2",
+      "flex-layout.row#shelf-2",
+      "flex-layout.row#banner-inferior",
+      "flex-layout.row#shelf-title-3",
+      "flex-layout.row#shelf-3"
     ]
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  "list-context.image-list#banner-principal": {
+    "children": ["slider-layout#banner-principal-images"],
     "props": {
       "height": 720,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "/arquivos/Banner-Principal-io.png",
+          "mobileImage": "/arquivos/Banner-Principal-Mobile-io.png"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "/arquivos/Banner-Principal-io.png",
+          "mobileImage": "/arquivos/Banner-Principal-Mobile-io.png"
         }
       ]
     }
   },
-  "slider-layout#demo-images": {
+  "slider-layout#banner-principal-images": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -43,61 +45,494 @@
       "blockClass": "carousel"
     }
   },
-
-  "rich-text#shelf-title": {
+  // carrossel marcas
+  "list-context.image-list#carrossel-marcas": {
+    "children": [
+      "rich-text#carrossel-marcas-title",
+      "slider-layout#carrossel-marcas-images"
+    ],
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "images": [
+        {
+          "image": "/arquivos/matrom-home-logo-marca-evga.png",
+          "link": "/evga"
+        },
+        {
+          "image": "/arquivos/matrom-home-logo-marca-gigabyte.png",
+          "link": "/gigabyte"
+        },
+        {
+          "image": "/arquivos/matrom-home-logo-marca-intel.png",
+          "link": "/intel"
+        },
+        {
+          "image": "/arquivos/matrom-home-logo-marca-kingston.png",
+          "link": "/kingston"
+        },
+        {
+          "image": "/arquivos/matrom-home-logo-marca-sandisk.png",
+          "link": "/sandisk"
+        }
+      ],
+      "horizontalAlign":"center",
+      "blockClass":"marcas"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+  "rich-text#carrossel-marcas-title":{
+    "props": {
+      "text": "## Encontre produtos das melhores marcas!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "brandsTitle"
+    }
   },
-  "list-context.product-list#demo1": {
+  "slider-layout#carrossel-marcas-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 4,
+        "phone": 2
+      },
+
+      "horizontalAlign":"center",
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "carousel-marcas"
+    }
+  },
+
+  // grid de banners
+  "responsive-layout.desktop#grid-banners-desktop": {
+    "children":[
+      "flex-layout.row#grid-banners-title-desktop",
+      "flex-layout.row#1-grid-banners-desktop",
+      "flex-layout.row#2-grid-banners-desktop"
+    ]
+  },
+  "flex-layout.row#grid-banners-title-desktop":{
+    "children":[
+      "rich-text#grid-banners-title-desktop"
+    ]
+  },
+  "rich-text#grid-banners-title-desktop": {
+    "props": {
+      "text": "## Navegue por nossos departamentos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "grid-banners"
+    }
+  },
+  
+  "flex-layout.row#1-grid-banners-desktop":{
+    "children": [
+      "image#grid-banner-1-1",
+      "image#grid-banner-1-2",
+      "image#grid-banner-1-3",
+      "image#grid-banner-1-4"
+    ],
+    "props": {
+      "marginBottom":4,
+      "rowGap": 4,
+      "colGap": 4,
+      "blockClass": "grid-banners"
+    }
+  },
+  "image#grid-banner-1-1":{
+    "props": {
+          "src": "/arquivos/matron-home-grid-armazenamento.png",
+          "maxHeight": 278
+        }
+  },
+  "image#grid-banner-1-2":{
+    "props": {
+          "src": "/arquivos/matron-home-grid-audio-video.png",
+          "maxHeight": 278
+        }
+  },
+  "image#grid-banner-1-3":{
+    "props": {
+          "src": "/arquivos/matron-home-grid-conectividade.png",
+          "maxHeight": 278
+        }
+  },
+  "image#grid-banner-1-4":{
+    "props": {
+          "src": "/arquivos/matron-home-grid-gamers.png",
+          "maxHeight": 278
+        }
+  },
+  "flex-layout.row#2-grid-banners-desktop":{
+    "children": [
+      "image#grid-banner-2-1",
+      "image#grid-banner-2-2",
+      "image#grid-banner-2-3",
+      "image#grid-banner-2-4"
+    ],
+    "props": {
+      "colGap": 4,
+      "blockClass": "grid-banners"
+    }
+  },
+  
+  "image#grid-banner-2-1":{
+    "props": {
+          "src": "/arquivos/matron-home-grid-hardwares.png",
+          "maxHeight": 278
+        }
+  },
+  "image#grid-banner-2-2":{
+    "props": {
+          "src": "/arquivos/matron-home-grid-memorias.png",
+          "maxHeight": 278
+        }
+  },
+  "image#grid-banner-2-3":{
+    "props": {
+          "src": "/arquivos/matron-home-grid-mesa-digitalziadora.png",
+          "maxHeight": 278
+        }
+  },
+  "image#grid-banner-2-4":{
+    "props": {
+          "src": "/arquivos/matron-home-grid-perifericos.png",
+          "maxHeight": 278
+        }
+  },
+  "responsive-layout.mobile#grid-banners-mobile":{
+    "children": [
+      "list-context.image-list#grid-banners-mobile"
+    ]
+  },
+  "list-context.image-list#grid-banners-mobile": {
+    "children": [
+      "rich-text#grid-banners-title-mobile",
+      "slider-layout#grid-banners-mobile"
+    ],
+    "props": {
+      "images": [
+        {
+          "image": "/arquivos/matron-home-grid-armazenamento.png"
+        },
+        {
+          "image": "/arquivos/matron-home-grid-audio-video.png"
+        },
+        {
+          "image": "/arquivos/matron-home-grid-conectividade.png"
+        },
+        {
+          "image": "/arquivos/matron-home-grid-gamers.png"
+        },
+        {
+          "image": "/arquivos/matron-home-grid-hardwares.png"
+        },
+        {
+          "image": "/arquivos/matron-home-grid-memorias.png"
+        },
+        {
+          "image": "/arquivos/matron-home-grid-mesa-digitalziadora.png"
+        },
+        {
+          "image": "/arquivos/matron-home-grid-perifericos.png"
+        }
+      ],
+      "horizontalAlign":"center",
+      "blockClass":"grid-banners-mobile"
+    }
+  },
+  "rich-text#grid-banners-title-mobile":{
+    "props": {
+      "text": "## Navegue por nossos departamentos!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "banners-grid-title"
+    }
+  },
+  "slider-layout#grid-banners-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+
+      "horizontalAlign":"center",
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "carousel"
+    }
+  },
+
+
+
+
+  // prateleira 1
+  "flex-layout.row#shelf-title-1":{
+    "children":[
+      "flex-layout.col#shelf-title-1",
+      "flex-layout.col#shelf-ver-mais-1"
+    ],
+    "props": {
+      "blockClass": "shelf-title"
+    }
+  },
+  "flex-layout.col#shelf-title-1":{
+    "children": [
+      "rich-text#shelf-title-1"
+    ],
+    "props": {
+      "horizontalAlign":"center",
+      "width": "95%"
+    }
+  },
+  "flex-layout.col#shelf-ver-mais-1":{
+    "children": [
+      "link#shelf-ver-mais-1"
+    ],
+    "props": {
+      "horizontalAlign":"right",
+      "width": "5%",
+      "blockClass":"ver-mais"
+    }
+  },
+  "rich-text#shelf-title-1": {
+    "props": {
+      "text": "## Promoções",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["shelfTitle-promocoes","shelf-title"]
+    }
+  },
+  "link#shelf-ver-mais-1": {
+    "props": {
+      "href": "/promocoes",
+      "label": "Ver mais",
+      "blockClass":"ver-mais"
+    }
+  },
+  "flex-layout.row#shelf-1": {
+    "children": ["list-context.product-list#prateleira1"]
+  },
+  "list-context.product-list#prateleira1": {
     "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+    "children": ["slider-layout#shelf-products-1"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }
   },
-  "slider-layout#demo-products": {
+  "slider-layout#shelf-products-1": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },
       "infinite": true,
       "fullWidth": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
       "blockClass": "shelf"
     }
   },
 
-  "info-card#home": {
+  // banners centrais
+  "flex-layout.row#banners-centrais":{
+    "children":[
+      "flex-layout.col#banner-central-1",
+      "flex-layout.col#banner-central-2"
+    ],
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "colGap": 4,
+      "blockClass": "banners-centrais"
+    }
+  },
+  "flex-layout.col#banner-central-1":{
+    "children":[
+      "image#banner-central-1"
+    ],
+    "props":{
+      "paddingLeft":0,
+      "paddingRight":0,
+      "verticalAlign":"middle"
+    }
+  },
+  "flex-layout.col#banner-central-2":{
+    "children":[
+      "image#banner-central-2"
+    ],
+    "props":{
+      "paddingLeft":0,
+      "paddingRight":0,
+      "verticalAlign":"middle"
+    }
+  },
+  "image#banner-central-1": {
+    "props": {
+      "src": "/arquivos/matron-home-banner-central-1.png",
+      "maxHeight": 180
+    }
+  },
+  "image#banner-central-2": {
+    "props": {
+      "src": "/arquivos/matron-home-banner-central-2.png",
+      "maxHeight": 180
     }
   },
 
-  "rich-text#question": {
+  // prateleira 2
+  "flex-layout.row#shelf-title-2":{
+    "children":[
+      "flex-layout.col#shelf-title-2",
+      "flex-layout.col#shelf-ver-mais-2"
+    ],
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "blockClass": "shelf-title"
+    }
+  },
+  "flex-layout.col#shelf-title-2":{
+    "children": [
+      "rich-text#shelf-title-2"
+    ],
+    "props": {
+      "horizontalAlign":"center",
+      "width": "95%"
+    }
+  },
+  "flex-layout.col#shelf-ver-mais-2":{
+    "children": [
+      "link#shelf-ver-mais-2"
+    ],
+    "props": {
+      "horizontalAlign":"right",
+      "width": "5%",
+      "blockClass":"ver-mais"
+    }
+  },
+  "rich-text#shelf-title-2": {
+    "props": {
+      "text": "## Acabaram de Chegar",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["shelfTitle-acabaram-de-chegar","shelf-title"]
+    }
+  },
+  "link#shelf-ver-mais-2": {
+    "props": {
+      "href": "/promocoes",
+      "label": "Ver mais",
+      "blockClass":"ver-mais"
+    }
+  },
+  "flex-layout.row#shelf-2": {
+    "children": ["list-context.product-list#prateleira2"]
+  },
+  "list-context.product-list#prateleira2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-products-2"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelf-products-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "shelf"
     }
   },
 
-  "rich-text#link": {
+  // banner inferior
+  "flex-layout.row#banner-inferior":{
+    "children":[
+      "image#banner-inferior"
+    ],
+    "props":{
+      "paddingLeft":"0px",
+      "paddingRight":"0px",
+      "colGap":4
+    }
+  },
+  "image#banner-inferior": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "src": "/arquivos/matron-home-banner-inferior.png",
+      "maxHeight": 303
+    }
+  },
+  
+  // prateleira 3
+  "flex-layout.row#shelf-title-3":{
+    "children":[
+      "flex-layout.col#shelf-title-3",
+      "flex-layout.col#shelf-ver-mais-3"
+    ],
+    "props": {
+      "blockClass": "shelf-title"
+    }
+  },
+  "flex-layout.col#shelf-title-3":{
+    "children": [
+      "rich-text#shelf-title-3"
+    ],
+    "props": {
+      "horizontalAlign":"center",
+      "width": "95%"
+    }
+  },
+  "flex-layout.col#shelf-ver-mais-3":{
+    "children": [
+      "link#shelf-ver-mais-3"
+    ],
+    "props": {
+      "horizontalAlign":"right",
+      "width": "5%",
+      "blockClass":"ver-mais"
+    }
+  },
+  "rich-text#shelf-title-3": {
+    "props": {
+      "text": "## Os mais buscados",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["shelfTitle-os-mais-buscados","shelf-title"]
+    }
+  },
+  "link#shelf-ver-mais-3": {
+    "props": {
+      "href": "/promocoes",
+      "label": "Ver mais",
+      "blockClass":"ver-mais"
+    }
+  },
+  "flex-layout.row#shelf-3": {
+    "children": ["list-context.product-list#prateleira3"]
+  },
+  "list-context.product-list#prateleira3": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf-products-3"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#shelf-products-3": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": "shelf"
     }
   }
 }

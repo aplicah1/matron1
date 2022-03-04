@@ -1,22 +1,110 @@
 .galleryLayoutOptionButton {
-  background-color: #F0F0F0;
-  color: #3F3F40;
-  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+    background-color: #fff;
+    color: #3F3F40;
+    padding: 0.375rem 0.75rem 0.375rem 0.75rem;
 }
 
 .galleryLayoutOptionButton--selected {
-  background-color: #3F3F40;
-  color: #FFFFFF;
+    background-color: #3F3F40;
+    color: #FFFFFF;
 }
 
 .galleryLayoutSwitcher {
-  border-radius: 4px 4px 4px 4px;
-  justify-content: center;
-  overflow: hidden;
-  width: auto !important;
-  align-self: center
+    border-radius: 4px 4px 4px 4px;
+    justify-content: center;
+    overflow: hidden;
+    width: auto !important;
+    align-self: center
 }
 
 .galleryItem--list {
-  border-bottom: 1px #E7E9EE solid;
+    border-bottom: 1px #E7E9EE solid;
+}
+
+.searchResultContainer {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: .5rem!important;
+}
+
+.gallery {
+    background-color: #fff;
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+@media(max-width:1024px) {
+    .gallery {
+        background-color: #fff;
+        padding-left: 0;
+        margin-left: 0px;
+    }
+}
+
+.filterIcon {
+    color: #D11E33;
+}
+
+.filterTitleSpan {
+    color: #303030;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--titulo-departamento) {
+    width: 20%;
+    font-size: 22px;
+    background-color: #fff;
+}
+
+.galleryTitle--layout {
+    font-size: 22px;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--filterCol) {
+    width: 20%;
+}
+
+.orderByButton {
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    text-transform: capitalize;
+    padding: 0.5rem;
+}
+
+.filterPopupTitle {
+    color: #303030;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.galleryLayoutOptionButton {
+    padding: 0.2rem 0.8rem;
+}
+
+.galleryLayoutOptionButton--selected {
+    background-color: #D11E33;
+}
+
+.filter__container {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.filterTemplateOverflow {
+    max-height: 1000px!important;
+}
+
+.filterItem {
+    color: #303030;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.totalProducts--layout {
+    padding: 0.8rem;
 }

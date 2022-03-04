@@ -1,393 +1,151 @@
 {
-  "vtex.menu@2.x:menu#Products": {
-    "props": {
-      "orientation": "vertical"
+    "vtex.menu@2.x:menu#footerMenuInstitucional": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menuFooterInstitucional"
+        },
+        "children": [
+            "menu-item#quem-somos",
+            "menu-item#como-chegar",
+            "menu-item#delivery",
+            "menu-item#servicos-e-manutencao"
+        ]
     },
-    "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
-    ]
-  },
-  "menu-item#news": {
-    "props": {
-      "id": "menu-item-news",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
-      }
-    }
-  },
-  "menu-item#blackfriday": {
-    "props": {
-      "id": "menu-item-black-friday",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
-      }
-    }
-  },
-  "menu-item#sale": {
-    "props": {
-      "id": "menu-item-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    }
-  },
-  "menu-item#personalization": {
-    "props": {
-      "id": "menu-item-personalization",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#footer-decoration": {
-    "props": {
-      "orientation": "vertical"
+    "menu-item#quem-somos": {
+        "props": {
+            "id": "menu-item-quem-somos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/quem-somos",
+                "noFollow": false,
+                "tagTitle": "Quem Somos",
+                "text": "Quem Somos"
+            }
+        }
     },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
-
-  "menu-item#smartphones": {
-    "props": {
-      "id": "menu-item-smartphones",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/decoration/smartphones",
-        "noFollow": true,
-        "tagTitle": "Smartphones",
-        "text": "Smartphones"
-      }
-    }
-  },
-
-  "menu-item#videogames": {
-    "props": {
-      "id": "menu-item-videogames",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/decoration/videogames",
-        "noFollow": true,
-        "tagTitle": "Videogames",
-        "text": "Videogames"
-      }
-    }
-  },
-
-  "menu-item#tvs": {
-    "props": {
-      "id": "menu-item-tvs",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/decoration/tvs",
-        "noFollow": true,
-        "tagTitle": "TVs",
-        "text": "TVs"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#footer-bags": {
-    "props": {
-      "orientation": "vertical"
+    "menu-item#como-chegar": {
+        "props": {
+            "id": "menu-item-como-chegar",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/como-chegar",
+                "noFollow": false,
+                "tagTitle": "Como Chegar",
+                "text": "Como Chegar"
+            }
+        }
     },
-    "children": [
-      "menu-item#bags",
-      "menu-item#backpacks",
-      "menu-item#necessaire"
-    ]
-  },
-
-  "menu-item#bags": {
-    "props": {
-      "id": "menu-item-bags",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/d",
-        "noFollow": true,
-        "tagTitle": "Bags",
-        "text": "Bags"
-      }
-    }
-  },
-
-  "menu-item#backpacks": {
-    "props": {
-      "id": "menu-item-backpacks",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/backpacks",
-        "noFollow": true,
-        "tagTitle": "Backpacks",
-        "text": "Backpacks"
-      }
-    }
-  },
-
-  "menu-item#necessaire": {
-    "props": {
-      "id": "menu-item-necessaire",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/necessaire",
-        "noFollow": true,
-        "tagTitle": "Necessaire",
-        "text": "Necessaire"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#footer-clothing": {
-    "props": {
-      "orientation": "vertical"
+    "menu-item#delivery": {
+        "props": {
+            "id": "menu-item-delivery",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/delivery",
+                "noFollow": false,
+                "tagTitle": "Delivery",
+                "text": "Delivery"
+            }
+        }
     },
-    "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
-    ]
-  },
-
-  "vtex.menu@2.x:menu#footer-mobile": {
-    "props": {
-      "orientation": "vertical"
+    "menu-item#servicos-e-manutencao": {
+        "props": {
+            "id": "menu-item-servicos-e-manutencao",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/servicos-e-manutencao",
+                "noFollow": false,
+                "tagTitle": "Serviços e Manutenção",
+                "text": "Serviços e Manutenção"
+            }
+        }
     },
-    "children": [
-      "menu-item#clothing-mobile",
-      "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
-    ]
-  },
 
-  "menu-item#clothing-mobile": {
-    "props": {
-      "id": "menu-item-category-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/d",
-        "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
+
+
+
+
+    "vtex.menu@2.x:menu#footerMenuAjuda": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menuFooterAtendimento"
+        },
+        "children": [
+            "menu-item#fale-conosco",
+            "menu-item#suporte-e-devolucoes",
+            "menu-item#politica-de-uso",
+            "menu-item#formas-de-pagamento"
+        ]
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
-  },
-  "vtex.menu@2.x:submenu.accordion#clothing": {
-    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
-  },
-
-  "vtex.menu@2.x:menu#clothing-accordion": {
-    "props": {
-      "orientation": "vertical"
+    "menu-item#fale-conosco": {
+        "props": {
+            "id": "menu-item-fale-conosco",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/fale-conosco",
+                "noFollow": false,
+                "tagTitle": "Fale Conosco",
+                "text": "Fale Conosco"
+            }
+        }
     },
-    "children": [
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
-    ]
-  },
-
-  "menu-item#decoration-mobile": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Decoration",
-        "text": "Decoration"
-      }
+    "menu-item#suporte-e-devolucoes": {
+        "props": {
+            "id": "menu-item-suporte-e-devolucoes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/suporte-e-devolucoes",
+                "noFollow": false,
+                "tagTitle": "Suporte e Devoluções",
+                "text": "Suporte e Devoluções"
+            }
+        }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
-  },
-  "vtex.menu@2.x:submenu.accordion#decoration": {
-    "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
-  },
-
-  "vtex.menu@2.x:menu#footer-decoration-mobile": {
-    "props": {
-      "orientation": "vertical"
+    "menu-item#politica-de-uso": {
+        "props": {
+            "id": "menu-item-politica-de-uso",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/politica-de-uso",
+                "noFollow": false,
+                "tagTitle": "Política de Uso",
+                "text": "Política de Uso"
+            }
+        }
     },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
-
-  "menu-item#sale-mobile": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Sale",
-        "text": "Sale"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
-  },
-  "vtex.menu@2.x:submenu.accordion#sale": {
-    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
-  },
-
-  "vtex.menu@2.x:menu#footer-sale-mobile": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
-
-  "menu-item#clothing": {
-    "props": {
-      "id": "menu-item-category-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/d",
-        "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
+    "menu-item#formas-de-pagamento": {
+        "props": {
+            "id": "menu-item-formas-de-pagamento",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/formas-de-pagamento",
+                "noFollow": false,
+                "tagTitle": "Formas de Pagamento",
+                "text": "Formas de Pagamento"
+            }
+        }
     }
-  },
-
-  "menu-item#shorts": {
-    "props": {
-      "id": "menu-item-shorts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/shorts",
-        "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Shorts"
-      }
-    }
-  },
-
-  "menu-item#tank-tops": {
-    "props": {
-      "id": "menu-item-tank-tops",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/tank-tops",
-        "noFollow": false,
-        "tagTitle": "Tank tops",
-        "text": "Tank tops"
-      }
-    }
-  },
-
-  "menu-item#shirts": {
-    "props": {
-      "id": "menu-item-shirts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/shirts",
-        "noFollow": false,
-        "tagTitle": "Shirts",
-        "text": "Shirts"
-      }
-    }
-  },
-
-  "menu-item#sweatshirt": {
-    "props": {
-      "id": "menu-item-sweat-shirts",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/sweatshirt",
-        "noFollow": false,
-        "tagTitle": "Sweatshirt",
-        "text": "Sweatshirt"
-      }
-    }
-  },
-
-  "menu-item#cropped": {
-    "props": {
-      "id": "menu-item-cropped",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/clothing/cropped",
-        "noFollow": false,
-        "tagTitle": "Cropped",
-        "text": "Cropped"
-      }
-    }
-  }
 }

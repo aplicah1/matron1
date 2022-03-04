@@ -1,42 +1,57 @@
-.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
-  border-radius: 50%;
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+    border-radius: 50%;
 }
 
 .container :global(.vtex-modal-layout-0-x-triggerContainer) {
-  opacity: 0;
-  transition: opacity 200ms ease-in-out;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
 }
 
 .container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
-  opacity: 1;
+    opacity: 1;
 }
 
 @media screen and (max-width: 40em) {
-  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
-    display: none;
-  }
+    .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+        display: none;
+    }
 }
 
-.nameContainer {
-  justify-content: start;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.brandName {
-  font-weight: 600;
-  font-size: 18px;
-  color: #2E2E2E;
+.vtex-button {
+    visibility: hidden;
 }
 
 .container {
-  text-align: start;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.nameContainer {
+    justify-content: start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.brandName {
+    font-weight: 300;
+    font-size: 14px;
+    color: #303030;
+}
+
+.container {
+    text-align: start;
 }
 
 .imageContainer {
-  text-align: center;
+    text-align: center;
 }
 
 .image {
-  border-radius: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.containerNormal:hover {
+    box-shadow: 0px 3px 6px #00000029;
 }

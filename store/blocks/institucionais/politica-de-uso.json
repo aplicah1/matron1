@@ -1,0 +1,57 @@
+{
+    "store.custom#politica-de-uso": {
+        "blocks": [
+            "flex-layout.row#politica-de-uso"
+        ]
+    },
+
+    "flex-layout.row#politica-de-uso": {
+        "props": {
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "flex-layout.col#politica-de-uso-1",
+            "flex-layout.col#politica-de-uso-2"
+        ]
+    },
+    "flex-layout.col#politica-de-uso-1": {
+        "props": {
+            "width": "22%",
+            "blockClass": "menu-institucional"
+        },
+        "children": [
+            "rich-text#title-menu-ajuda",
+            "rich-text#menu-institucional-1",
+            "rich-text#menu-institucional-2",
+            "rich-text#menu-institucional-3",
+            "rich-text#menu-institucional-4",
+            "rich-text#menu-institucional-5",
+            "rich-text#menu-institucional-6",
+            "rich-text#menu-institucional-7-active",
+            "rich-text#menu-institucional-8"
+        ]
+    },
+
+    "flex-layout.col#politica-de-uso-2": {
+        "props": {
+            "width": "78%",
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "rich-text#titulo-politica-de-uso-1",
+            "rich-text#conteudo-politica-de-uso-1"
+        ]
+    },
+    "rich-text#titulo-politica-de-uso-1": {
+        "props": {
+            "blockClass": "title-content-institucional",
+            "text": "## Condições de Uso"
+        }
+    },
+    "rich-text#conteudo-politica-de-uso-1": {
+        "props": {
+            "blockClass": "content-institucional",
+            "text": "VOCÊ ESTA TOTALMENTE SEGURO!!<br>Suas transações na Matron estão protegidas com certificação HTTPS. Todos os seus dados estão em total sigilo, criptografados durante o fechamento do pedido. Repare que na barra de status de seu navegador aparecerá um cadeado. Isto significa que a página está segura.<br>ACESSO A DADOS:<br>À Matron se dá ao direito de manter os dados de seus clientes cadastrados e atualizados quando necessário, e por questão de segurança e confiabilidade essas informações, nunca serão reveladas a terceiros nem por ordem expressa do cliente.<br>COMO COMPRAR NA MATRON?<br>É muito rápido e fácil comprar através da Matron. Siga os passos e confira você mesmo:<br><br>1 - Selecione o produto desejado.<br>Navegue nas seções da loja (menu do lado esquerdo) ou procure através do nosso sistema de pesquisa utilizando os seguintes critérios:<br>- nome do produto, ou parte do nome.<br>- fabricante, ou código interno da Matron para identificação do produto.<br>- para uma busca mais refinada utilize a procura avançada.<br>Selecione o produto e coloque-o em sua Sacola de compras. Repita o 1º passo até colocar na Sacola todos os itens que deseja comprar e em seguida clique no botão Fechar Pedido.<br>2 - Cadastro e Login.<br>Caso você já seja um cliente cadastrado no site da Matron, basta fazer o login no site utilizando seu e-mail e senha. Caso você ainda não seja cliente é muito simples, basta realizar seu cadastro em poucos minutos e em seguida dar continuidade ao seu pedido.<br>3 - Informações de Entrega<br>Neste ponto basta confirmar o endereço de entrega, ou incluir um novo endereço para onde o pedido deverá ser informado.<br>4 - Informações de Pagamento Pagamento Digital<br>Agora é bem simples basta clicar em 'Continuar' que você será direcionado para as formas de pagamento oferecidas e escolher a melhor maneira de pagar.<br>5 - Pronto! Pedido concluído<br>Parabéns, você acabou de comprar na maior e melhor loja de produtos para informática da Internet brasileira. Um e-mail com o resumo de seu pedido será automaticamente enviado. Caso necessário nosso pessoal entrará em contato com você para esclarecer quaisquer dúvidas adicionais.<br>COMO E QUANDO ENTREGAREMOS SEUS PRODUTOS?<br>Após a liberação pelo sistema de pagamento, o seu produto será entregue pelos correios, via SEDEX, e-Sedex ou PAC, em qualquer lugar do Brasil; com exceção de alguns itens tais como; Micros, Impressoras, Estabilizadores e No-Breaks, que serão entregues por Transportadora.<br>O valor do frete é calculado automaticamente e não está incluso nos preços anunciados.<br>Caso o produto comprado se encontre-se em nosso estoque, o prazo de entrega muda de acordo com o frete escolhido: via SEDEX é de até 4 dias úteis ou PAC é de até 20 dias úteis.<br>Este prazo é passível de alteração por problemas de força maior.<br>A data do pedido não conta para o cálculo do prazo de entrega. Os pedidos efetuados após as 14:00 horas ou nos finais de semana e feriados serão confirmados no dia útil seguinte.<br>Se não tivermos estoque disponível para entrega do produto você será comunicado por e-mail ou telefone.<br>As compras efetuadas com cartão de crédito serão entregues somente no endereço do titular do cartão.<br>Observações Gerais:<br>- Consulte também as condições especiais para pagamento parcelado com cartão de crédito e taxas super reduzidas.***<br>- Por medida de segurança, para compras realizadas com cartão de crédito, documentos adicionais poderão ser solicitados."
+        }
+    }
+}

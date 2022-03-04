@@ -63,7 +63,7 @@
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
-      "flex-layout.row#searchtitle",
+      // "flex-layout.row#searchtitle",
       "flex-layout.row#result"
     ],
     "props": {
@@ -80,7 +80,10 @@
     }
   },
   "flex-layout.row#searchtitle": {
-    "children": ["search-title.v2"]
+    "children": ["search-title.v2"],
+    "props": {
+      "blockClass": "titulo-departamento"
+    }
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
@@ -95,6 +98,11 @@
       "blockClass": "filterCol"
     }
   },
+  "filter-navigator.v3":{
+    "props": {
+      "initiallyCollapsed":true
+    }
+  },
   "flex-layout.col#content": {
     "children": [
       "flex-layout.row#searchinfo",
@@ -103,15 +111,18 @@
       "flex-layout.row#fetchmore"
     ],
     "props": {
-      "width": "grow",
+      "width": "80%",
       "preventVerticalStretch": true
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
+    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"],
+    "props": {
+      "blockClass": "filter-wrapper"
+    }
   },
   "flex-layout.row#orderByAndSwitcher": {
-    "children": ["order-by.v2", "gallery-layout-switcher"],
+    "children": ["gallery-layout-switcher","order-by.v2"],
     "props": {
       "horizontalAlign": "right",
       "preventHorizontalStretch": true,
@@ -245,7 +256,7 @@
             "(min-width:1300px)": 4,
             "desktop": 3,
             "tablet": 3,
-            "phone": 2
+            "phone": 1
           }
         },
         {

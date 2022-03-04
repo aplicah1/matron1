@@ -1,43 +1,42 @@
 {
-  "vtex.menu@2.x:menu#websites": {
-    "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
-    ]
-  },
-  "menu-item#shop": {
-    "props": {
-      "id": "menu-item-shop",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      }
+    "vtex.menu@2.x:menu#textos-topo": {
+        "children": [
+            "slider-layout#texto-topo"
+        ]
+    },
+    "slider-layout#texto-topo": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": true,
+            "showNavigationArrows": "desktopOnly",
+            "arrowSize": 10,
+            "showPaginationDots": "never",
+            "blockClass": "carousel-texto-topo"
+        },
+        "children": ["rich-text#1", "rich-text#2", "rich-text#3"]
+    },
+
+    "rich-text#1": {
+        "props": {
+            "text": "Aceitamos pagamentos via PIX!",
+            "blockClass": "carousel-texto-topo"
+        }
+    },
+    "rich-text#2": {
+        "props": {
+            "text": "Aceitamos pagamentos via PIX!",
+            "blockClass": "carousel-texto-topo"
+        }
+    },
+    "rich-text#3": {
+        "props": {
+            "text": "Aceitamos pagamentos via PIX!",
+            "blockClass": "carousel-texto-topo"
+        }
     }
-  },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
-    ]
-  },
-  "menu-item#vtex-website": {
-    "props": {
-      "id": "menu-item-vtex-website",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
-        "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
-      }
-    }
-  }
 }

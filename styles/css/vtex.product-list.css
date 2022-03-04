@@ -1,0 +1,12 @@
+.productImage {
+    max-width: 70px;
+}
+
+.productName {
+    color: #303030;
+    font-size: 12px;
+}
+
+.productBrandName {
+    display: none!important;
+}

@@ -1,0 +1,40 @@
+.minicartContainer {
+    background-color: #2D752A;
+    border-radius: 3px;
+}
+
+.minicartWrapperContainer {
+    left: -30px;
+}
+
+.minicartIconContainer {
+    display: flex;
+    align-items: center;
+    width: 75px;
+}
+
+.openIconContainer {
+    padding: 0.2rem;
+}
+
+.minicartQuantityBadge {
+    position: relative;
+    background-color: transparent;
+    border-radius: 0px;
+    right: 0px;
+    top: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.childrenContainer {
+    background-color: #fff;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.minicartProductListContainer :global(.vtex-flex-layout-0-x-flexRowContent) {
+    align-items: center;
+}

@@ -1,34 +1,54 @@
 .flexRow--orderByAndSwitcher {
-  padding-right: 1.5em;
+    padding-right: 1.5em;
 }
 
 .flexRowContent--savingsSummaryListDesktop {
-  justify-content: flex-start;
+    justify-content: flex-start;
 }
 
 .flexCol--summaryRightListDesktop {
-  justify-content: space-around;
+    justify-content: space-around;
 }
 
 .flexRow--buyNowButton :global(.vtex-button) {
-  background: #eef3f7;
-  border-color:#eef3f7;
-  color: #0f3e99;
+    background: #eef3f7;
+    border-color: #eef3f7;
+    color: #0f3e99;
 }
 
 .flexRow--buyNowButton:hover :global(.vtex-button) {
-  background: #dbe9fd;
-  border-color:#dbe9fd;
+    display: none;
+}
+
+.flexRowContent--main-header {
+    background-color: #fff;
 }
 
 .flexCol--productRating {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 .flexCol--summaryDetailsListMobile {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .flexCol--summaryUpDetailsListMobile {
-  margin-bottom: 0.25rem
+    margin-bottom: 0.25rem
+}
+
+.flexRowContent--grid-banners {
+    width: 95%;
+    margin: 0 auto 0.75rem auto;
+}
+
+.flexCol--prod-right {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.flexRowContent--shelf-title {
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
 }

@@ -1,0 +1,92 @@
+{
+    "store.custom#formas-de-pagamento": {
+        "blocks": [
+            "flex-layout.row#formas-de-pagamento"
+        ]
+    },
+
+    "flex-layout.row#formas-de-pagamento": {
+        "props": {
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "flex-layout.col#formas-de-pagamento-1",
+            "flex-layout.col#formas-de-pagamento-2"
+        ]
+    },
+    "flex-layout.col#formas-de-pagamento-1": {
+        "props": {
+            "width": "22%",
+            "blockClass": "menu-institucional"
+        },
+        "children": [
+            "rich-text#title-menu-ajuda",
+            "rich-text#menu-institucional-1",
+            "rich-text#menu-institucional-2",
+            "rich-text#menu-institucional-3",
+            "rich-text#menu-institucional-4",
+            "rich-text#menu-institucional-5",
+            "rich-text#menu-institucional-6",
+            "rich-text#menu-institucional-7",
+            "rich-text#menu-institucional-8-active"
+        ]
+    },
+
+    "flex-layout.col#formas-de-pagamento-2": {
+        "props": {
+            "width": "78%",
+            "blockClass": "content-institucional"
+        },
+        "children": [
+            "rich-text#titulo-formas-de-pagamento-1",
+            "image#boleto",
+            "rich-text#boleto",
+            "image#cartao",
+            "rich-text#cartao",
+            "image#pag-seguro",
+            "rich-text#pag-seguro"
+        ]
+    },
+    "rich-text#titulo-formas-de-pagamento-1": {
+        "props": {
+            "blockClass": ["title-content-institucional", "titulo-pagamento"],
+            "text": "## Formas de pagamento<br> "
+        }
+    },
+    "image#boleto": {
+        "props": {
+            "src": "https://www.matron.com.br/arquivos/boletook.jpg",
+            "maxHeight": 60
+        }
+    },
+    "rich-text#boleto": {
+        "props": {
+            "blockClass": ["content-institucional", "content-institucional-pagamento"],
+            "text": "Boleto: Na Matron ao utilizar como forma de pagamento o boleto bancário você receberá um desconto promocional de 8% no valor final do pedido."
+        }
+    },
+    "image#cartao": {
+        "props": {
+            "src": "https://www.matron.com.br/arquivos/credito.jpg",
+            "maxHeight": 60
+        }
+    },
+    "rich-text#cartao": {
+        "props": {
+            "blockClass": ["content-institucional", "content-institucional-pagamento"],
+            "text": "Na Matron você poderá fazer suas compras com cartão de credito de sua preferência e realizar o pagamento em até 12x c/ juros*"
+        }
+    },
+    "image#pag-seguro": {
+        "props": {
+            "src": "https://www.matron.com.br/arquivos/BandeirasPS.jpg",
+            "maxHeight": 60
+        }
+    },
+    "rich-text#pag-seguro": {
+        "props": {
+            "blockClass": ["content-institucional", "content-institucional-pagamento"],
+            "text": "PagSeguro (Cartão de Credito e Débito): Com o PagSeguro você pode pagar suas compras através de cartão de crédito de diversas bandeiras e ainda parcelar em até 12x, você pode também pagar por débito e transferência bancária ou até mesmo com o seu saldo do PagSeguro."
+        }
+    }
+}
