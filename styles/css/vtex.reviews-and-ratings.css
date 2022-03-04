@@ -11,7 +11,7 @@
     font-size: 22px;
     font-weight: bold;
     text-indent: 35px;
-    border: none;
+    border: none!important;
     margin: 0;
 }
 
