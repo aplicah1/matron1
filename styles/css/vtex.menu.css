@@ -6,8 +6,9 @@
 .submenuWrapper {
     background-color: #fff;
     width: 300px;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 2px 2px 4px 0px black;
     margin: 0;
+    z-index: 99;
 }
 
 .submenu {
