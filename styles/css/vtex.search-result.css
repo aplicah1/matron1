@@ -47,7 +47,7 @@
 
 .filterTitleSpan {
     color: #303030;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -107,4 +107,8 @@
 
 .totalProducts--layout {
     padding: 0.8rem;
+}
+
+.buttonShowMore--layout {
+    margin: 20px auto;
 }

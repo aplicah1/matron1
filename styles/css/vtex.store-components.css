@@ -242,3 +242,9 @@
     font-size: 14px;
     line-height: 23px;
 }
+
+.discountInsideContainer {
+    position: absolute;
+    left: 0;
+    width: 30%;
+}

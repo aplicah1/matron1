@@ -317,4 +317,8 @@
         align-items: center;
         margin-bottom: 20px;
     }
+    .flexRowContent--pag-seg-row {
+        align-items: center;
+        display: flex;
+    }
 }
