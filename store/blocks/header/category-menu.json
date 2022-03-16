@@ -387,6 +387,7 @@
             "menu-item#category-case-para-hd",
             "menu-item#category-pendrive",
             "menu-item#category-cartao-de-memoria",
+            "menu-item#category-fonte-para-pc",
             "menu-item#category-gravador",
             "menu-item#category-placa-de-video",
             "menu-item#category-placa-de-som",
@@ -485,6 +486,21 @@
                 "noFollow": false,
                 "tagTitle": "Cartão de Memória",
                 "text": "Cartão de Memória"
+            }
+        }
+    },
+    "menu-item#category-fonte-para-pc": {
+        "props": {
+            "id": "menu-item-category-fonte-para-pc",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/fonte-para-pc/",
+                "noFollow": false,
+                "tagTitle": "Fonte para PC",
+                "text": "Fonte para PC"
             }
         }
     },
