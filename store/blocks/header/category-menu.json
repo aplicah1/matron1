@@ -252,10 +252,10 @@
             "highlight": false,
             "itemProps": {
                 "type": "internal",
-                "href": "/perifericos/fones-e-headset/",
+                "href": "/perifericos/fone-e-headset/",
                 "noFollow": false,
-                "tagTitle": "Fones e Headset",
-                "text": "Fones e Headset"
+                "tagTitle": "Fone e Headset",
+                "text": "Fone e Headset"
             }
         }
     },
@@ -391,9 +391,14 @@
             "menu-item#category-gravador",
             "menu-item#category-placa-de-video",
             "menu-item#category-placa-de-som",
+            "menu-item#category-processador-amd",
+            "menu-item#category-processador-intel",
             "menu-item#category-tv-e-captura",
             "menu-item#category-memoria-ram",
+            "menu-item#category-memoria-ram-notebook",
+            "menu-item#category-memoria-ram-pc",
             "menu-item#category-placa-mae",
+            "menu-item#category-placa-mae-intel",
             "menu-item#category-processador",
             "menu-item#category-cooler",
             "menu-item#category-pasta-termica"
@@ -467,10 +472,10 @@
             "highlight": false,
             "itemProps": {
                 "type": "internal",
-                "href": "/hardware/pendrive/",
+                "href": "/hardware/pen-drive/",
                 "noFollow": false,
-                "tagTitle": "Pendrive",
-                "text": "Pendrive"
+                "tagTitle": "Pen-drive",
+                "text": "Pen-drive"
             }
         }
     },
@@ -549,6 +554,36 @@
             }
         }
     },
+    "menu-item#category-processador-amd": {
+        "props": {
+            "id": "menu-item-category-processador-amd",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/processador/amd",
+                "noFollow": false,
+                "tagTitle": "Processador AMD",
+                "text": "Processador AMD"
+            }
+        }
+    },
+    "menu-item#category-processador-intel": {
+        "props": {
+            "id": "menu-item-category-processador-intel",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/processador/intel",
+                "noFollow": false,
+                "tagTitle": "Processador Intel",
+                "text": "Processador Intel"
+            }
+        }
+    },
     "menu-item#category-tv-e-captura": {
         "props": {
             "id": "menu-item-category-tv-e-captura",
@@ -579,6 +614,36 @@
             }
         }
     },
+    "menu-item#category-memoria-ram-notebook": {
+        "props": {
+            "id": "menu-item-category-memoria-ram-notebook",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/memoria-ram/notebook",
+                "noFollow": false,
+                "tagTitle": "Memória RAM Notebook",
+                "text": "Memória RAM Notebook"
+            }
+        }
+    },
+    "menu-item#category-memoria-ram-pc": {
+        "props": {
+            "id": "menu-item-category-memoria-ram-pc",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/memoria-ram/pc",
+                "noFollow": false,
+                "tagTitle": "Memória RAM PC",
+                "text": "Memória RAM PC"
+            }
+        }
+    },
     "menu-item#category-placa-mae": {
         "props": {
             "id": "menu-item-category-placa-mae",
@@ -591,6 +656,21 @@
                 "noFollow": false,
                 "tagTitle": "Placa Mãe",
                 "text": "Placa Mãe"
+            }
+        }
+    },
+    "menu-item#category-placa-mae-intel": {
+        "props": {
+            "id": "menu-item-category-placa-mae-intel",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/hardware/placa-mae/intel",
+                "noFollow": false,
+                "tagTitle": "Placa Mãe Intel",
+                "text": "Placa Mãe Intel"
             }
         }
     },
