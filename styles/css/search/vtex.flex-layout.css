@@ -41,6 +41,10 @@
     margin: 0 auto 0.75rem auto;
 }
 
+.flexRowContent--grid-banners .stretchChildrenWidth {
+    align-items: end!important;
+}
+
 .flexCol--prod-right {
     padding: 20px;
     background-color: #fff;
