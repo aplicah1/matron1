@@ -41,8 +41,8 @@
     margin: 0 auto 0.75rem auto;
 }
 
-.flexRowContent--grid-banners .stretchChildrenWidth {
-    align-items: end!important;
+.flexRowContent--grid-banners .stretchChildrenWidth :global(.vtex-store-components-3-x-imageElement) {
+    max-height: 185px!important;
 }
 
 .flexCol--prod-right {
