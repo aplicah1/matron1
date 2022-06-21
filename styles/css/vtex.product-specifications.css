@@ -2,6 +2,7 @@
     font-size: 13px;
     color: #303030;
     line-height: 20px;
+    white-space: break-spaces;
 }
 
 .specificationName {
